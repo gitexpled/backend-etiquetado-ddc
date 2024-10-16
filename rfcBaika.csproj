@@ -1,0 +1,2013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CAC7B01D-7490-4496-BB22-0440F41BD610}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rfcBaika</RootNamespace>
+    <AssemblyName>rfcBaika</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\temp\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\iaraya\Desktop\LIB\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="sapnco, Version=3.1.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SCLEM_PORTAL\sclem_portal\bin\sapnco.dll</HintPath>
+    </Reference>
+    <Reference Include="sapnco_utils, Version=3.1.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SCLEM_PORTAL\sclem_portal\bin\sapnco_utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Select.HtmlToPdf">
+      <HintPath>..\..\..\..\..\iaraya\Desktop\LIB\Select.HtmlToPdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CARGA_MASIVA_LOG.aspx" />
+    <Content Include="CARGA_MASIVA_CONSULTA_LOG.aspx" />
+    <Content Include="AGREGAR_TEMPORADA.aspx" />
+    <Content Include="JSON_DB_MONITOR_PANTALLA.aspx" />
+    <Content Include="LogWEB.aspx" />
+    <Content Include="JSON_BAPI_MIGO_GENERAL.aspx" />
+    <Content Include="JSON_BAPI_CARACT.aspx" />
+    <Content Include="JSON_BAPI_MIGO.aspx" />
+    <Content Include="JSON_ZMOV_10006.aspx" />
+    <Content Include="JSON_GET_ACUMULADO_GRUPO_VARIEDAD_SIN_SEM.aspx" />
+    <Content Include="JSON_GET_ACUMULADO_VARIEDAD_SIM_SEM.aspx" />
+    <Content Include="JSON_GET_TEMPORADAS_Token.aspx" />
+    <Content Include="JSON_ZMF_PAGOS_PRODUCTORES.aspx" />
+    <Content Include="JSON_ZMF_PAGOS_PRODUCTORES_Token.aspx" />
+    <Content Include="JSON_ZMOV_QUERYS_PRODUCT_Token.aspx" />
+    <Content Include="execSp.aspx" />
+    <Content Include="JSON_PORTAL_MANTENEDORES.aspx" />
+    <Content Include="JSON_GET_SP_ACUMULADO.aspx" />
+    <Content Include="JSON_GET_ACUMULADO_GRUPO_VARIEDAD.aspx" />
+    <Content Include="JSON_GET_ACUMULADO_VARIEDAD.aspx" />
+    <Content Include="JSON_REEMBALAJE_SERV.aspx" />
+    <Content Include="JSON_SP.aspx" />
+    <Content Include="JSON_UPDATE_ESTADO_ETIQUETA.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_HU_INFO_ARRAY.aspx" />
+    <Content Include="JSON_ZMOV_10038.aspx" />
+    <Content Include="JSON_ZMOV_10037.aspx" />
+    <Content Include="JSON_GET_TEMPORADA_ACTIVA.aspx" />
+    <Content Include="JSON_ZMOV_MOV_311.aspx" />
+    <Content Include="GET_LOTE_NEW.aspx" />
+    <Content Include="JSON_INFORME_APROBACIONES_Token.aspx" />
+    <Content Include="JSON_DB_EMBARQUE_CORREOS.aspx" />
+    <Content Include="JSON_RFC_READ_TABLE_2.aspx" />
+    <Content Include="JSON_ZDDCRP_PROCESO_RANGO.aspx" />
+    <Content Include="JSON_ZMOV_10001.aspx" />
+    <Content Include="GET_NRO_PROCESO.aspx" />
+    <Content Include="JSON_DB_IMP_EMBARQUE.aspx" />
+    <Content Include="JSON_DEL_TEMPORADA.aspx" />
+    <Content Include="JSON_GET_TEMPORADAS.aspx" />
+    <Content Include="JSON_REEMBALAJE_EX.aspx" />
+    <Content Include="JSON_ZMOV_10036.aspx" />
+    <Content Include="JSON_ZMOV_50011.aspx" />
+    <Content Include="JSON_ZMOV_PROCESO_RANGO_PRZ.aspx" />
+    <Content Include="RFC_READ_TABLE.aspx" />
+    <Content Include="JSON_PORTAL_CONSULTA_CALIDAD_Token.aspx" />
+    <Content Include="JSON_DEL_ESPECIE_VARIEDAD.aspx" />
+    <Content Include="JSON_BAPI_INFORECORD_GETLIST.aspx" />
+    <Content Include="JSON_GET_ESP_VAR.aspx" />
+    <Content Include="JSON_ADD_ESPECIE_VARIEDAD.aspx" />
+    <Content Include="ECO_ELIMINAR_ESTIMACION.aspx" />
+    <Content Include="ECO_CONSULTA_ASIGNADO.aspx" />
+    <Content Include="ECO_CONSULTA_BLOQUEO.aspx" />
+    <Content Include="ECO_BLOQUEAR.aspx" />
+    <Content Include="ECO_REASIGNAR_USUARIO.aspx" />
+    <Content Include="ECO_CONSULTA_USUARIOS_R.aspx" />
+    <Content Include="JSON_DB_EMBARQUE.aspx" />
+    <Content Include="JSON_ZMOV_10021.aspx" />
+    <Content Include="JSON_DB_GET_CHARG.aspx" />
+    <Content Include="JSON_ZMOV_10020.aspx" />
+    <Content Include="JSON_ZMOV_10022.aspx" />
+    <Content Include="JSON_ZMOV_10033.aspx" />
+    <Content Include="JSON_ZMOV_10034.aspx" />
+    <Content Include="JSON_ZMOV_GET_PALLETS.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_LIST_MATER.aspx" />
+    <Content Include="JSON_PORTAL_CONSULTA_PRODUCCION_CALIDAD_APROBADO_Token.aspx" />
+    <Content Include="JSON_PORTAL_APRUEBACALIDAD_Token.aspx" />
+    <Content Include="JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_Token.aspx" />
+    <Content Include="JSON_PORTAL_APRUEBAGUIA_Token.aspx" />
+    <Content Include="JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_APROBADO_Token.aspx" />
+    <Content Include="JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_APROBADO_Token.aspx" />
+    <Content Include="JSON_PORTAL_APRUEBALOTE_Token.aspx" />
+    <Content Include="JSON_PORTAL_CONSULTA_PRODUCCION_RESUMEN_Token.aspx" />
+    <Content Include="JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_Token.aspx" />
+    <Content Include="ECO_INFORME_ENVASE.aspx" />
+    <Content Include="ECO_INFORME_CAJA.aspx" />
+    <Content Include="JSON_PORTAL_CONSULTA_PRODUCCION_Token.aspx" />
+    <Content Include="JSON_ZMOV_RP_PRODUCCION.aspx" />
+    <Content Include="JSON_ZMOV_QUERYS_PRODUCT.aspx" />
+    <Content Include="JSON_ZMF_PRODUCTORES_CTACTE.aspx" />
+    <Content Include="ECO_ELIMINAR_USUARIO.aspx" />
+    <Content Include="ECO_ELIMINAR_RELACION.aspx" />
+    <Content Include="ECO_AGREGAR_USUARIO.aspx" />
+    <Content Include="ECO_INFORME_ESTIMACION.aspx" />
+    <Content Include="ECO_DELETE_FT.aspx" />
+    <Content Include="ECO_CONSULTA_G_FT.aspx" />
+    <Content Include="ECO_INSERT_FT_ESPECIE.aspx" />
+    <Content Include="ECO_INSERT_FT_VARIEDAD.aspx" />
+    <Content Include="ECO_INSERT_FT_HIJO.aspx" />
+    <Content Include="ECO_INSERT_FT.aspx" />
+    <Content Include="ECO_CONSULTA_FT_ESPECIE.aspx" />
+    <Content Include="ECO_CONSULTA_FT_VARIEDAD.aspx" />
+    <Content Include="ECO_CONSULTA_FT_PRDHIJO.aspx" />
+    <Content Include="ECO_CONSULTA_FT.aspx" />
+    <Content Include="ECO_CONSULTA_PRODUCTOR.aspx" />
+    <Content Include="ECO_CONSULTA_PRODUCTORES.aspx" />
+    <Content Include="ECO_AGREGAR_ESTIMACION.aspx" />
+    <Content Include="ECO_AGREGAR_ANHO.aspx" />
+    <Content Include="ECO_CERRAR_ANHO.aspx" />
+    <Content Include="ECO_CONSULTA_ANO.aspx" />
+    <Content Include="ECO_ASIGNAR_USUARIO.aspx" />
+    <Content Include="ECO_CERRAR_ESTIMACION.aspx" />
+    <Content Include="ECO_CONSULTA_USUARIOS.aspx" />
+    <Content Include="ECO_GET_TIPIFICACION.aspx" />
+    <Content Include="ECO_GET_PRODUCTOR_USER.aspx" />
+    <Content Include="ECO_GET_CALIBRE.aspx" />
+    <Content Include="ECO_CONSULTA_HISTORICO.aspx" />
+    <Content Include="ECO_CONSULTA_TEMPORADA.aspx" />
+    <Content Include="JSON_DB_CAJA_UNICA.aspx" />
+    <Content Include="JSON_DB_CAJA_UNICA_AUX.aspx" />
+    <Content Include="JSON_DB_CARGA_INICIAL_RE.aspx" />
+    <Content Include="JSON_DB_CONSULTA_ESTRUCTURA_RE.aspx" />
+    <Content Include="JSON_DB_CONSULTA_PROCESOS.aspx" />
+    <Content Include="JSON_DB_CONSULTA_VENTANA_XML.aspx" />
+    <Content Include="JSON_DB_DESACTIVAR_PROCESOS.aspx" />
+    <Content Include="JSON_DB_ESTRUCTURA_RE.aspx" />
+    <Content Include="JSON_DB_INSERTA_PROCESO.aspx" />
+    <Content Include="JSON_DB_PANICO.aspx" />
+    <Content Include="JSON_DB_RE_ETIQUETA_INICIO.aspx" />
+    <Content Include="JSON_ZDDCRP_PROCESO_PRZ.aspx" />
+    <Content Include="ECO_CONSULTA_CALIBRE.aspx" />
+    <Content Include="ECO_CONSULTA_TIPIFICACION.aspx" />
+    <Content Include="ECO_CONSULTA_TIPOFRIO.aspx" />
+    <Content Include="ECO_CONSULTA_INGRESO.aspx" />
+    <Content Include="ECO_MOD_SEMANA_A.aspx" />
+    <Content Include="ECO_SEMANA_CONSULT.aspx" />
+    <Content Include="JSON_DB_PRESIZER.aspx" />
+    <Content Include="ECO_ANUAL_SEMANA.aspx" />
+    <Content Include="ECO_CALIBRE.aspx" />
+    <Content Include="ECO_CONSULTA_ANUAL.aspx" />
+    <Content Include="ECO_CONSULTA_SEMANA.aspx" />
+    <Content Include="ECO_INGRESOS.aspx" />
+    <Content Include="ECO_SEMANA.aspx" />
+    <Content Include="JSON_ZMF_GET_MOVIMIENTOS.aspx" />
+    <Content Include="JSON_ZMF_MOV_QUERY_LOTE.aspx" />
+    <Content Include="JSON_ZMF_GET_CENTRO_APP.aspx" />
+    <Content Include="JSON_ZMOV_CAMBIO_V.aspx" />
+    <Content Include="JSON_ZMOV_CARGA_INICIAL.aspx" />
+    <Content Include="JSON_ZMOV_CONSULTA_ETI.aspx" />
+    <Content Include="JSON_ZMOV_CONSULTA_ETIQUETAS.aspx" />
+    <Content Include="JSON_ZMOV_CONSULTA_GTIN.aspx" />
+    <Content Include="JSON_ZMOV_ELIMINAR_ET.aspx" />
+    <Content Include="JSON_ZMOV_ELIMINAR_TODO.aspx" />
+    <Content Include="JSON_ZMOV_ESTRUCTURA_LINEA.aspx" />
+    <Content Include="JSON_ZMOV_ETIQUETA.aspx" />
+    <Content Include="JSON_ZMOV_ETIQUETA2.aspx" />
+    <Content Include="JSON_ZMOV_ETIQUETA_CONSULTA.aspx" />
+    <Content Include="JSON_ZMOV_ETIQUETA_VENTANA.aspx" />
+    <Content Include="JSON_ZMOV_INS_ETI.aspx" />
+    <Content Include="JSON_ZMOV_MOD_PROCESO.aspx" />
+    <Content Include="JSON_ZMOV_PROCESO_ALL.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_HU_INFO.aspx" />
+    <Content Include="JSON_ZMF_GET_USER.aspx" />
+    <Content Include="JSON_ZMOV_CONSULTA_ETIQUETA.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_DET_ENTREGA_SAG.aspx" />
+    <Content Include="JSON_ZMOV_FILAS.aspx" />
+    <Content Include="JSON_ZMOV_PANTALLAS.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_DET_PEDIDO.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_DET_FACT.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_DET_ENTREGA.aspx" />
+    <Content Include="JSON_ZMOV_SAG_CENTROS.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_HU_ALMACEN.aspx" />
+    <Content Include="JSON_ZMOV_SELECCION_ETIQUETA.aspx" />
+    <Content Include="JSON_ZMOV_STOCK_CONSULTA.aspx" />
+    <Content Include="JSON_ZMOV_STOCK_NPARTIDA.aspx" />
+    <Content Include="JSON_ZMOV_STOCK_ZPL.aspx" />
+    <Content Include="JSON_ZMOV_STOCK_ZPL2.aspx" />
+    <Content Include="JSON_ZMOV_TERMINADO_MANUAL.aspx" />
+    <Content Include="JSON_ZMOV_TURNO_FECHA.aspx" />
+    <Content Include="JSON_ZMOV_VOICEPICK.aspx" />
+    <Content Include="JSON_ZRFC_QM_LOTEINFO_C.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_HU_READ.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_MATERIAL_CONSUMO.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_STOCK_PROCESO.aspx" />
+    <Content Include="JSON_ZMF_GET_UAT.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_GRUPO_CATE.aspx" />
+    <Content Include="JSON_ZMOV_SAG_EXTRAE.aspx" />
+    <Content Include="JSON_ZDDCRP_PROCESO.aspx" />
+    <Content Include="JSON_ZMF_GET_DAT_PROD.aspx" />
+    <Content Include="JSON_CONFIG_LINEA.aspx" />
+    <Content Include="JSON_DB_RECEPCION_GRANEL.aspx" />
+    <Content Include="JSON_VISTA_ZPL.aspx" />
+    <Content Include="JSON_ZMOV_CREATE_HU.aspx" />
+    <Content Include="JSON_DB_ZPL.aspx" />
+    <Content Include="JSON_IMAGE_ZPL.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_STOCK_LOTE.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_STOCK_ALMACEN.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_MATERIAL.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_PRODUCTOR.aspx" />
+    <Content Include="JSON_DB_RECEPCION.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_VARIEDAD.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_TRATAMIENTO.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_TIPO_FRIO.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_ESPECIE.aspx" />
+    <Content Include="JSON_ZPL_SAVE.aspx" />
+    <Content Include="JSON_ZRFC_QM_LOTEINFO.aspx" />
+    <Content Include="SON_GET_SERVICES_LIST.aspx" />
+    <Content Include="JSON_ZMOV_QUERY_HU_DATOADICIONAL.aspx" />
+    <Content Include="createRFC.aspx" />
+    <Content Include="JSON_DB_LOGIN.aspx" />
+    <Content Include="rfcNET.asmx" />
+    <Content Include="print.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAPI_GOODSMVT_CANCEL.cs" />
+    <Compile Include="BAPI_GOODSMVT_CREATE.cs" />
+    <Compile Include="BAPI_GOODSMVT_GETDETAIL.cs" />
+    <Compile Include="BAPI_INFORECORD_GETLIST.cs" />
+    <Compile Include="BAPI_PO_CHANGE.cs" />
+    <Compile Include="BAPI_PO_CREATE1_POHEADER.cs" />
+    <Compile Include="BAPI_TRANSACTION.cs" />
+    <Compile Include="CARGA_MASIVA_LOG.aspx.cs">
+      <DependentUpon>CARGA_MASIVA_LOG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARGA_MASIVA_LOG.aspx.designer.cs">
+      <DependentUpon>CARGA_MASIVA_LOG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CARGA_MASIVA_CONSULTA_LOG.aspx.cs">
+      <DependentUpon>CARGA_MASIVA_CONSULTA_LOG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARGA_MASIVA_CONSULTA_LOG.aspx.designer.cs">
+      <DependentUpon>CARGA_MASIVA_CONSULTA_LOG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AGREGAR_TEMPORADA.aspx.cs">
+      <DependentUpon>AGREGAR_TEMPORADA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AGREGAR_TEMPORADA.aspx.designer.cs">
+      <DependentUpon>AGREGAR_TEMPORADA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CONEXION.cs" />
+    <Compile Include="DB_MONITOR_PANTALL.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="JSON_DB_MONITOR_PANTALLA.aspx.cs">
+      <DependentUpon>JSON_DB_MONITOR_PANTALLA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_MONITOR_PANTALLA.aspx.designer.cs">
+      <DependentUpon>JSON_DB_MONITOR_PANTALLA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogWEB.aspx.cs">
+      <DependentUpon>LogWEB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogWEB.aspx.designer.cs">
+      <DependentUpon>LogWEB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GPLogger.cs" />
+    <Compile Include="DB_ETIQUETA_CORRELATIVO.cs" />
+    <Compile Include="DB_UNITEC.cs" />
+    <Compile Include="JSON_BAPI_MIGO_GENERAL.aspx.cs">
+      <DependentUpon>JSON_BAPI_MIGO_GENERAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_BAPI_MIGO_GENERAL.aspx.designer.cs">
+      <DependentUpon>JSON_BAPI_MIGO_GENERAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_BAPI_CARACT.aspx.cs">
+      <DependentUpon>JSON_BAPI_CARACT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_BAPI_CARACT.aspx.designer.cs">
+      <DependentUpon>JSON_BAPI_CARACT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_BAPI_MIGO.aspx.cs">
+      <DependentUpon>JSON_BAPI_MIGO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_BAPI_MIGO.aspx.designer.cs">
+      <DependentUpon>JSON_BAPI_MIGO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10006.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10006.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10006.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10006.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UNITEC_NOTIFICACION.aspx.cs">
+      <DependentUpon>UNITEC_NOTIFICACION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UNITEC_NOTIFICACION.aspx.designer.cs">
+      <DependentUpon>UNITEC_NOTIFICACION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZMOV_10006.cs" />
+    <Compile Include="JSON_GET_ACUMULADO_GRUPO_VARIEDAD_SIN_SEM.aspx.cs">
+      <DependentUpon>JSON_GET_ACUMULADO_GRUPO_VARIEDAD_SIN_SEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_GET_ACUMULADO_GRUPO_VARIEDAD_SIN_SEM.aspx.designer.cs">
+      <DependentUpon>JSON_GET_ACUMULADO_GRUPO_VARIEDAD_SIN_SEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_GET_ACUMULADO_VARIEDAD_SIM_SEM.aspx.cs">
+      <DependentUpon>JSON_GET_ACUMULADO_VARIEDAD_SIM_SEM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_GET_ACUMULADO_VARIEDAD_SIM_SEM.aspx.designer.cs">
+      <DependentUpon>JSON_GET_ACUMULADO_VARIEDAD_SIM_SEM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_GET_TEMPORADAS_Token.aspx.cs">
+      <DependentUpon>JSON_GET_TEMPORADAS_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_GET_TEMPORADAS_Token.aspx.designer.cs">
+      <DependentUpon>JSON_GET_TEMPORADAS_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMF_PAGOS_PRODUCTORES.aspx.cs">
+      <DependentUpon>JSON_ZMF_PAGOS_PRODUCTORES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMF_PAGOS_PRODUCTORES.aspx.designer.cs">
+      <DependentUpon>JSON_ZMF_PAGOS_PRODUCTORES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMF_PAGOS_PRODUCTORES_Token.aspx.cs">
+      <DependentUpon>JSON_ZMF_PAGOS_PRODUCTORES_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMF_PAGOS_PRODUCTORES_Token.aspx.designer.cs">
+      <DependentUpon>JSON_ZMF_PAGOS_PRODUCTORES_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERYS_PRODUCT_Token.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERYS_PRODUCT_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERYS_PRODUCT_Token.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERYS_PRODUCT_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_execSp.cs" />
+    <Compile Include="execSp.aspx.cs">
+      <DependentUpon>execSp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="execSp.aspx.designer.cs">
+      <DependentUpon>execSp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_MANTENEDORES.aspx.cs">
+      <DependentUpon>JSON_PORTAL_MANTENEDORES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_MANTENEDORES.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_MANTENEDORES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailAlert.cs" />
+    <Compile Include="JSON_GET_SP_ACUMULADO.aspx.cs">
+      <DependentUpon>JSON_GET_SP_ACUMULADO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_GET_SP_ACUMULADO.aspx.designer.cs">
+      <DependentUpon>JSON_GET_SP_ACUMULADO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_GET_ACUMULADO_GRUPO_VARIEDAD.aspx.cs">
+      <DependentUpon>JSON_GET_ACUMULADO_GRUPO_VARIEDAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_GET_ACUMULADO_GRUPO_VARIEDAD.aspx.designer.cs">
+      <DependentUpon>JSON_GET_ACUMULADO_GRUPO_VARIEDAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_GET_ACUMULADO_VARIEDAD.aspx.cs">
+      <DependentUpon>JSON_GET_ACUMULADO_VARIEDAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_GET_ACUMULADO_VARIEDAD.aspx.designer.cs">
+      <DependentUpon>JSON_GET_ACUMULADO_VARIEDAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_REEMBALAJE_SERV.aspx.cs">
+      <DependentUpon>JSON_REEMBALAJE_SERV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_REEMBALAJE_SERV.aspx.designer.cs">
+      <DependentUpon>JSON_REEMBALAJE_SERV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reembalaje_servicio.cs" />
+    <Compile Include="DB_SP.cs" />
+    <Compile Include="JSON_SP.aspx.cs">
+      <DependentUpon>JSON_SP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_SP.aspx.designer.cs">
+      <DependentUpon>JSON_SP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_UPDATE_ESTADO_ETIQUETA.aspx.cs">
+      <DependentUpon>JSON_UPDATE_ESTADO_ETIQUETA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_UPDATE_ESTADO_ETIQUETA.aspx.designer.cs">
+      <DependentUpon>JSON_UPDATE_ESTADO_ETIQUETA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_HU_INFO_ARRAY.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_INFO_ARRAY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_HU_INFO_ARRAY.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_INFO_ARRAY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10038.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10038.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10038.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10038.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10037.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10037.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10037.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10037.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PTI_WS.cs" />
+    <Compile Include="ZMOV_10037.cs" />
+    <Compile Include="ZMOV_10038.cs" />
+    <Compile Include="ZMOV_20036.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_PT_FRESCO_R.cs" />
+    <Compile Include="JSON_GET_TEMPORADA_ACTIVA.aspx.cs">
+      <DependentUpon>JSON_GET_TEMPORADA_ACTIVA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_GET_TEMPORADA_ACTIVA.aspx.designer.cs">
+      <DependentUpon>JSON_GET_TEMPORADA_ACTIVA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_MOV_311.aspx.cs">
+      <DependentUpon>JSON_ZMOV_MOV_311.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_MOV_311.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_MOV_311.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_GET_LOTE_NEW.cs" />
+    <Compile Include="GET_LOTE_NEW.aspx.cs">
+      <DependentUpon>GET_LOTE_NEW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GET_LOTE_NEW.aspx.designer.cs">
+      <DependentUpon>GET_LOTE_NEW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_INFORME_APROBACIONES_Token.aspx.cs">
+      <DependentUpon>JSON_INFORME_APROBACIONES_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_INFORME_APROBACIONES_Token.aspx.designer.cs">
+      <DependentUpon>JSON_INFORME_APROBACIONES_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_EMBARQUE_CORREOS.cs" />
+    <Compile Include="JSON_DB_EMBARQUE_CORREOS.aspx.cs">
+      <DependentUpon>JSON_DB_EMBARQUE_CORREOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_EMBARQUE_CORREOS.aspx.designer.cs">
+      <DependentUpon>JSON_DB_EMBARQUE_CORREOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_RFC_READ_TABLE_2.aspx.cs">
+      <DependentUpon>JSON_RFC_READ_TABLE_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_RFC_READ_TABLE_2.aspx.designer.cs">
+      <DependentUpon>JSON_RFC_READ_TABLE_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZDDCRP_PROCESO_RANGO.aspx.cs">
+      <DependentUpon>JSON_ZDDCRP_PROCESO_RANGO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZDDCRP_PROCESO_RANGO.aspx.designer.cs">
+      <DependentUpon>JSON_ZDDCRP_PROCESO_RANGO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10036.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10036.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10036.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10036.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_50011.aspx.cs">
+      <DependentUpon>JSON_ZMOV_50011.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_50011.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_50011.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_PROCESO_RANGO_PRZ.aspx.cs">
+      <DependentUpon>JSON_ZMOV_PROCESO_RANGO_PRZ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_PROCESO_RANGO_PRZ.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_PROCESO_RANGO_PRZ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RFC_READ_TABLE_2.cs" />
+    <Compile Include="ZDDCRP_PROCESO_RANGO.cs" />
+    <Compile Include="ZMOV_10001.cs" />
+    <Compile Include="JSON_ZMOV_10001.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10001.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10001.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10001.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_GET_NRO_PROCESO.cs" />
+    <Compile Include="DB_IMP_EMBARQUE.cs" />
+    <Compile Include="GET_NRO_PROCESO.aspx.cs">
+      <DependentUpon>GET_NRO_PROCESO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GET_NRO_PROCESO.aspx.designer.cs">
+      <DependentUpon>GET_NRO_PROCESO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_IMP_EMBARQUE.aspx.cs">
+      <DependentUpon>JSON_DB_IMP_EMBARQUE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_IMP_EMBARQUE.aspx.designer.cs">
+      <DependentUpon>JSON_DB_IMP_EMBARQUE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DEL_TEMPORADA.aspx.cs">
+      <DependentUpon>JSON_DEL_TEMPORADA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DEL_TEMPORADA.aspx.designer.cs">
+      <DependentUpon>JSON_DEL_TEMPORADA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_AGREGAR_TEMPORADA.cs" />
+    <Compile Include="JSON_GET_TEMPORADAS.aspx.cs">
+      <DependentUpon>JSON_GET_TEMPORADAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_GET_TEMPORADAS.aspx.designer.cs">
+      <DependentUpon>JSON_GET_TEMPORADAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_REEMBALAJE_EX.aspx.cs">
+      <DependentUpon>JSON_REEMBALAJE_EX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_REEMBALAJE_EX.aspx.designer.cs">
+      <DependentUpon>JSON_REEMBALAJE_EX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="reembalaje.cs" />
+    <Compile Include="RFC_READ_TABLE.aspx.cs">
+      <DependentUpon>RFC_READ_TABLE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RFC_READ_TABLE.aspx.designer.cs">
+      <DependentUpon>RFC_READ_TABLE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RFC_READ_TABLE.cs" />
+    <Compile Include="DB_CARGA_MASIVA_CONSULTA_LOG.cs" />
+    <Compile Include="DB_LOG_CARGA_MASIVA.cs" />
+    <Compile Include="JSON_PORTAL_CONSULTA_CALIDAD_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_CALIDAD_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_CALIDAD_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_CALIDAD_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DEL_ESPECIE_VARIEDAD.aspx.cs">
+      <DependentUpon>JSON_DEL_ESPECIE_VARIEDAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DEL_ESPECIE_VARIEDAD.aspx.designer.cs">
+      <DependentUpon>JSON_DEL_ESPECIE_VARIEDAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_BAPI_INFORECORD_GETLIST.aspx.cs">
+      <DependentUpon>JSON_BAPI_INFORECORD_GETLIST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_BAPI_INFORECORD_GETLIST.aspx.designer.cs">
+      <DependentUpon>JSON_BAPI_INFORECORD_GETLIST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_GET_ESP_VAR.aspx.cs">
+      <DependentUpon>JSON_GET_ESP_VAR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_GET_ESP_VAR.aspx.designer.cs">
+      <DependentUpon>JSON_GET_ESP_VAR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ADD_ESPECIE_VARIEDAD.aspx.cs">
+      <DependentUpon>JSON_ADD_ESPECIE_VARIEDAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ADD_ESPECIE_VARIEDAD.aspx.designer.cs">
+      <DependentUpon>JSON_ADD_ESPECIE_VARIEDAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\cl.ptichile.sistema-test\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="ZMOV_10019.cs" />
+    <Compile Include="ZMOV_10036.cs" />
+    <Compile Include="ZMOV_20034.cs" />
+    <Compile Include="ZMOV_30007.cs" />
+    <Compile Include="ZMOV_40003.cs" />
+    <Compile Include="ZMOV_50001.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_PT_FRESCO_SE.cs" />
+    <Compile Include="ZMOV_PROCESO_RANGO_PRZ.cs" />
+    <Compile Include="ZMOV_QUERY_STOCK_ALMACEN_2.cs" />
+    <Compile Include="DB_ECO_ELIMINAR_ESTIMACION.cs" />
+    <Compile Include="DB_EMBARQUE.cs" />
+    <Compile Include="ECO_ELIMINAR_ESTIMACION.aspx.cs">
+      <DependentUpon>ECO_ELIMINAR_ESTIMACION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_ELIMINAR_ESTIMACION.aspx.designer.cs">
+      <DependentUpon>ECO_ELIMINAR_ESTIMACION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CONSULTA_ASIGNADO.cs" />
+    <Compile Include="ECO_CONSULTA_ASIGNADO.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_ASIGNADO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_ASIGNADO.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_ASIGNADO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CONSULTA_BLOQUEO.cs" />
+    <Compile Include="DB_GET_CHARG.cs" />
+    <Compile Include="ECO_CONSULTA_BLOQUEO.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_BLOQUEO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_BLOQUEO.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_BLOQUEO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_BLOQUEAR.aspx.cs">
+      <DependentUpon>ECO_BLOQUEAR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_BLOQUEAR.aspx.designer.cs">
+      <DependentUpon>ECO_BLOQUEAR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_BLOQUEAR.cs" />
+    <Compile Include="DB_ECO_REASIGNAR_USUARIO.cs" />
+    <Compile Include="ECO_REASIGNAR_USUARIO.aspx.cs">
+      <DependentUpon>ECO_REASIGNAR_USUARIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_REASIGNAR_USUARIO.aspx.designer.cs">
+      <DependentUpon>ECO_REASIGNAR_USUARIO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CONSULTA_USUARIOS_R.cs" />
+    <Compile Include="ECO_CONSULTA_USUARIOS_R.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_USUARIOS_R.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_USUARIOS_R.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_USUARIOS_R.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_EMBARQUE.aspx.cs">
+      <DependentUpon>JSON_DB_EMBARQUE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_EMBARQUE.aspx.designer.cs">
+      <DependentUpon>JSON_DB_EMBARQUE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10021.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10021.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10021.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10021.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_GET_CHARG.aspx.cs">
+      <DependentUpon>JSON_DB_GET_CHARG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_GET_CHARG.aspx.designer.cs">
+      <DependentUpon>JSON_DB_GET_CHARG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10020.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10020.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10020.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10020.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10022.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10022.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10022.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10022.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10033.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10033.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10033.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10033.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10034.aspx.cs">
+      <DependentUpon>JSON_ZMOV_10034.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_10034.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_10034.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_GET_PALLETS.aspx.cs">
+      <DependentUpon>JSON_ZMOV_GET_PALLETS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_GET_PALLETS.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_GET_PALLETS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_LIST_MATER.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_LIST_MATER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_LIST_MATER.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_LIST_MATER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_CALIDAD_APROBADO_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_CALIDAD_APROBADO_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_CALIDAD_APROBADO_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_CALIDAD_APROBADO_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_APRUEBACALIDAD_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_APRUEBACALIDAD_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_APRUEBACALIDAD_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_APRUEBACALIDAD_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_APRUEBAGUIA_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_APRUEBAGUIA_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_APRUEBAGUIA_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_APRUEBAGUIA_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_APROBADO_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_APROBADO_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_APROBADO_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_SATELITE_APROBADO_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_APROBADO_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_APROBADO_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_APROBADO_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_APROBADO_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_APRUEBALOTE_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_APRUEBALOTE_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_APRUEBALOTE_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_APRUEBALOTE_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_RESUMEN_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_RESUMEN_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_RESUMEN_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_RESUMEN_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_DETALLE_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_INFORME_ENVASE.aspx.cs">
+      <DependentUpon>ECO_INFORME_ENVASE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_INFORME_ENVASE.aspx.designer.cs">
+      <DependentUpon>ECO_INFORME_ENVASE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_INFORME_CAJA.cs" />
+    <Compile Include="ECO_INFORME_CAJA.aspx.cs">
+      <DependentUpon>ECO_INFORME_CAJA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_INFORME_CAJA.aspx.designer.cs">
+      <DependentUpon>ECO_INFORME_CAJA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_INFORME_ENVASE.cs" />
+    <Compile Include="DB_PORTAL.cs" />
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_Token.aspx.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_Token.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_PORTAL_CONSULTA_PRODUCCION_Token.aspx.designer.cs">
+      <DependentUpon>JSON_PORTAL_CONSULTA_PRODUCCION_Token.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_RP_PRODUCCION.aspx.cs">
+      <DependentUpon>JSON_ZMOV_RP_PRODUCCION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_RP_PRODUCCION.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_RP_PRODUCCION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZMOV_10020.cs" />
+    <Compile Include="ZMOV_10021.cs" />
+    <Compile Include="ZMOV_10022.cs" />
+    <Compile Include="ZMOV_10033.cs" />
+    <Compile Include="ZMOV_10034.cs" />
+    <Compile Include="ZMOV_20030.cs" />
+    <Compile Include="ZMOV_20031.cs" />
+    <Compile Include="ZMOV_20032.cs" />
+    <Compile Include="ZMOV_20033.cs" />
+    <Compile Include="ZMOV_50011.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_FRESCO_UAT.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_HU_FRESCO_C.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_PT_FRCO_C.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_PT_FRESCO_OR.cs" />
+    <Compile Include="ZMOV_GET_PALLETS.cs" />
+    <Compile Include="ZMOV_GOODSMVT_CREATE.cs" />
+    <Compile Include="ZMOV_QUERY_LIST_MATER.cs" />
+    <Compile Include="ZMOV_RP_PRODUCCION.cs" />
+    <Compile Include="ZMF_PRODUCTORES_CTACTE.cs" />
+    <Compile Include="ZMF_PAGOS_PRODUCTORES.cs" />
+    <Compile Include="ZMOV_QUERYS_PRODUCT.cs" />
+    <Compile Include="JSON_ZMOV_QUERYS_PRODUCT.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERYS_PRODUCT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERYS_PRODUCT.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERYS_PRODUCT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMF_PRODUCTORES_CTACTE.aspx.cs">
+      <DependentUpon>JSON_ZMF_PRODUCTORES_CTACTE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMF_PRODUCTORES_CTACTE.aspx.designer.cs">
+      <DependentUpon>JSON_ZMF_PRODUCTORES_CTACTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_ELIMINAR_USUARIO.aspx.cs">
+      <DependentUpon>ECO_ELIMINAR_USUARIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_ELIMINAR_USUARIO.aspx.designer.cs">
+      <DependentUpon>ECO_ELIMINAR_USUARIO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ELIMINAR_USUARIO.cs" />
+    <Compile Include="ECO_ELIMINAR_RELACION.aspx.cs">
+      <DependentUpon>ECO_ELIMINAR_RELACION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_ELIMINAR_RELACION.aspx.designer.cs">
+      <DependentUpon>ECO_ELIMINAR_RELACION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ELIMINAR_RELACION.cs" />
+    <Compile Include="ECO_AGREGAR_USUARIO.aspx.cs">
+      <DependentUpon>ECO_AGREGAR_USUARIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_AGREGAR_USUARIO.aspx.designer.cs">
+      <DependentUpon>ECO_AGREGAR_USUARIO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_AGREGAR_USUARIO.cs" />
+    <Compile Include="ECO_INFORME_ESTIMACION.aspx.cs">
+      <DependentUpon>ECO_INFORME_ESTIMACION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_INFORME_ESTIMACION.aspx.designer.cs">
+      <DependentUpon>ECO_INFORME_ESTIMACION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_INFORME_ESTIMACION.cs" />
+    <Compile Include="DB_CAJA_UNICA.cs" />
+    <Compile Include="DB_CAJA_UNICA_AUX.cs" />
+    <Compile Include="DB_ECO_DELETE_FT.cs" />
+    <Compile Include="ECO_DELETE_FT.aspx.cs">
+      <DependentUpon>ECO_DELETE_FT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_DELETE_FT.aspx.designer.cs">
+      <DependentUpon>ECO_DELETE_FT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_DESACTIVAR_PROCESOS.cs" />
+    <Compile Include="ECO_CONSULTA_G_FT.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_G_FT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_G_FT.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_G_FT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CONSULTA_G_FT.cs" />
+    <Compile Include="ECO_INSERT_FT_ESPECIE.aspx.cs">
+      <DependentUpon>ECO_INSERT_FT_ESPECIE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_INSERT_FT_ESPECIE.aspx.designer.cs">
+      <DependentUpon>ECO_INSERT_FT_ESPECIE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_INSERT_FT_VARIEDAD.aspx.cs">
+      <DependentUpon>ECO_INSERT_FT_VARIEDAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_INSERT_FT_VARIEDAD.aspx.designer.cs">
+      <DependentUpon>ECO_INSERT_FT_VARIEDAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_INSERT_FT_HIJO.aspx.cs">
+      <DependentUpon>ECO_INSERT_FT_HIJO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_INSERT_FT_HIJO.aspx.designer.cs">
+      <DependentUpon>ECO_INSERT_FT_HIJO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_INSERT_FT.aspx.cs">
+      <DependentUpon>ECO_INSERT_FT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_INSERT_FT.aspx.designer.cs">
+      <DependentUpon>ECO_INSERT_FT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_INSERT_FT_VARIEDAD.cs" />
+    <Compile Include="DB_ECO_INSERT_FT_ESPECIE.cs" />
+    <Compile Include="DB_ECO_INSERT_FT_HIJO.cs" />
+    <Compile Include="DB_ECO_INSERT_FT.cs" />
+    <Compile Include="DB_ECO_CONSULTA_FT.cs" />
+    <Compile Include="DB_ECO_CONSULTA_FT_ESPECIE.cs" />
+    <Compile Include="DB_ECO_CONSULTA_FT_VARIEDAD.cs" />
+    <Compile Include="DB_ECO_CONSULTA_FT_PRDHIJO.cs" />
+    <Compile Include="ECO_CONSULTA_FT_ESPECIE.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_FT_ESPECIE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_FT_ESPECIE.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_FT_ESPECIE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_FT_VARIEDAD.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_FT_VARIEDAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_FT_VARIEDAD.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_FT_VARIEDAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_FT_PRDHIJO.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_FT_PRDHIJO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_FT_PRDHIJO.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_FT_PRDHIJO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_FT.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_FT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_FT.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_FT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_PRODUCTOR.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_PRODUCTOR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_PRODUCTOR.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_PRODUCTOR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CONSULTA_PRODUCTOR.cs" />
+    <Compile Include="DB_ECO_CONSULTA_PRODUCTORES.cs" />
+    <Compile Include="ECO_CONSULTA_PRODUCTORES.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_PRODUCTORES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_PRODUCTORES.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_PRODUCTORES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_MATERIALES.cs" />
+    <Compile Include="ECO_AGREGAR_ESTIMACION.aspx.cs">
+      <DependentUpon>ECO_AGREGAR_ESTIMACION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_AGREGAR_ESTIMACION.aspx.designer.cs">
+      <DependentUpon>ECO_AGREGAR_ESTIMACION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_AGREGAR_ESTIMACION.cs" />
+    <Compile Include="DB_CARGA_INICIAL_RE.cs" />
+    <Compile Include="DB_CONSULTA_ESTRUCTURA_RE.cs" />
+    <Compile Include="DB_CONSULTA_ETIQUETA_VENTANA.cs" />
+    <Compile Include="DB_CONSULTA_PROCESOS.cs" />
+    <Compile Include="DB_ESTRUCTURA_RE.cs" />
+    <Compile Include="DB_ETIQUETA2.cs" />
+    <Compile Include="DB_INSERTA_PROCESO.cs" />
+    <Compile Include="DB_PANICO.cs" />
+    <Compile Include="DB_RE_ETIQUETA_INICIO.cs" />
+    <Compile Include="DB_STOCK_CONSULTA_ZPL2.cs" />
+    <Compile Include="ECO_AGREGAR_ANHO.aspx.cs">
+      <DependentUpon>ECO_AGREGAR_ANHO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_AGREGAR_ANHO.aspx.designer.cs">
+      <DependentUpon>ECO_AGREGAR_ANHO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_AGREGAR_ANHO.cs" />
+    <Compile Include="ECO_CERRAR_ANHO.aspx.cs">
+      <DependentUpon>ECO_CERRAR_ANHO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CERRAR_ANHO.aspx.designer.cs">
+      <DependentUpon>ECO_CERRAR_ANHO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CERRAR_ANHO.cs" />
+    <Compile Include="ECO_CONSULTA_ANO.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_ANO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_ANO.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_ANO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CONSULTA_ANO.cs" />
+    <Compile Include="DB_ECO_CERRAR_ESTIMACION.cs" />
+    <Compile Include="ECO_ASIGNAR_USUARIO.aspx.cs">
+      <DependentUpon>ECO_ASIGNAR_USUARIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_ASIGNAR_USUARIO.aspx.designer.cs">
+      <DependentUpon>ECO_ASIGNAR_USUARIO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_ASIGNAR_USUARIO.cs" />
+    <Compile Include="ECO_CERRAR_ESTIMACION.aspx.cs">
+      <DependentUpon>ECO_CERRAR_ESTIMACION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CERRAR_ESTIMACION.aspx.designer.cs">
+      <DependentUpon>ECO_CERRAR_ESTIMACION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_USUARIOS.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_USUARIOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_USUARIOS.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_USUARIOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CONSULTA_USUARIOS.cs" />
+    <Compile Include="JsonResult.cs" />
+    <Compile Include="JSON_DB_CAJA_UNICA.aspx.cs">
+      <DependentUpon>JSON_DB_CAJA_UNICA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_CAJA_UNICA.aspx.designer.cs">
+      <DependentUpon>JSON_DB_CAJA_UNICA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_CAJA_UNICA_AUX.aspx.cs">
+      <DependentUpon>JSON_DB_CAJA_UNICA_AUX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_CAJA_UNICA_AUX.aspx.designer.cs">
+      <DependentUpon>JSON_DB_CAJA_UNICA_AUX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_CARGA_INICIAL_RE.aspx.cs">
+      <DependentUpon>JSON_DB_CARGA_INICIAL_RE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_CARGA_INICIAL_RE.aspx.designer.cs">
+      <DependentUpon>JSON_DB_CARGA_INICIAL_RE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_CONSULTA_ESTRUCTURA_RE.aspx.cs">
+      <DependentUpon>JSON_DB_CONSULTA_ESTRUCTURA_RE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_CONSULTA_ESTRUCTURA_RE.aspx.designer.cs">
+      <DependentUpon>JSON_DB_CONSULTA_ESTRUCTURA_RE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_CONSULTA_PROCESOS.aspx.cs">
+      <DependentUpon>JSON_DB_CONSULTA_PROCESOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_CONSULTA_PROCESOS.aspx.designer.cs">
+      <DependentUpon>JSON_DB_CONSULTA_PROCESOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_CONSULTA_VENTANA_XML.aspx.cs">
+      <DependentUpon>JSON_DB_CONSULTA_VENTANA_XML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_CONSULTA_VENTANA_XML.aspx.designer.cs">
+      <DependentUpon>JSON_DB_CONSULTA_VENTANA_XML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_DESACTIVAR_PROCESOS.aspx.cs">
+      <DependentUpon>JSON_DB_DESACTIVAR_PROCESOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_DESACTIVAR_PROCESOS.aspx.designer.cs">
+      <DependentUpon>JSON_DB_DESACTIVAR_PROCESOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_ESTRUCTURA_RE.aspx.cs">
+      <DependentUpon>JSON_DB_ESTRUCTURA_RE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_ESTRUCTURA_RE.aspx.designer.cs">
+      <DependentUpon>JSON_DB_ESTRUCTURA_RE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_INSERTA_PROCESO.aspx.cs">
+      <DependentUpon>JSON_DB_INSERTA_PROCESO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_INSERTA_PROCESO.aspx.designer.cs">
+      <DependentUpon>JSON_DB_INSERTA_PROCESO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_PANICO.aspx.cs">
+      <DependentUpon>JSON_DB_PANICO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_PANICO.aspx.designer.cs">
+      <DependentUpon>JSON_DB_PANICO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_RE_ETIQUETA_INICIO.aspx.cs">
+      <DependentUpon>JSON_DB_RE_ETIQUETA_INICIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_RE_ETIQUETA_INICIO.aspx.designer.cs">
+      <DependentUpon>JSON_DB_RE_ETIQUETA_INICIO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ETIQUETA2.aspx.cs">
+      <DependentUpon>JSON_ZMOV_ETIQUETA2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ETIQUETA2.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_ETIQUETA2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_STOCK_ZPL2.aspx.cs">
+      <DependentUpon>JSON_ZMOV_STOCK_ZPL2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_STOCK_ZPL2.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_STOCK_ZPL2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZMOV_UPDATE_HU_HEADER_N_APR.cs" />
+    <Compile Include="DB_ECO_GET_PRODUCTOR_USER.cs" />
+    <Compile Include="DB_ECO_GET_TIPIFICACION.cs" />
+    <Compile Include="DB_ECO_GET_CALIBRE.cs" />
+    <Compile Include="ECO_GET_TIPIFICACION.aspx.cs">
+      <DependentUpon>ECO_GET_TIPIFICACION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_GET_TIPIFICACION.aspx.designer.cs">
+      <DependentUpon>ECO_GET_TIPIFICACION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_GET_PRODUCTOR_USER.aspx.cs">
+      <DependentUpon>ECO_GET_PRODUCTOR_USER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_GET_PRODUCTOR_USER.aspx.designer.cs">
+      <DependentUpon>ECO_GET_PRODUCTOR_USER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_GET_CALIBRE.aspx.cs">
+      <DependentUpon>ECO_GET_CALIBRE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_GET_CALIBRE.aspx.designer.cs">
+      <DependentUpon>ECO_GET_CALIBRE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_HISTORICO.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_HISTORICO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_HISTORICO.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_HISTORICO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CONSULTA_HISTORICO.cs" />
+    <Compile Include="DB_ECO_CONSULTA_TEMPORADA.cs" />
+    <Compile Include="DB_TURNO_FECHA.cs" />
+    <Compile Include="ECO_CONSULTA_TEMPORADA.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_TEMPORADA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_TEMPORADA.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_TEMPORADA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CONSULTA_ETIQUETAS.cs" />
+    <Compile Include="DB_CONSULTA_GTIN.cs" />
+    <Compile Include="DB_ELIMINAR_ET.cs" />
+    <Compile Include="DB_ELIMINAR_TODO.cs" />
+    <Compile Include="DB_SELECCION_ETIQUETA.cs" />
+    <Compile Include="DB_TERMINADO_MANUAL.cs" />
+    <Compile Include="JSON_ZDDCRP_PROCESO_PRZ.aspx.cs">
+      <DependentUpon>JSON_ZDDCRP_PROCESO_PRZ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZDDCRP_PROCESO_PRZ.aspx.designer.cs">
+      <DependentUpon>JSON_ZDDCRP_PROCESO_PRZ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CAMBIO_V.cs" />
+    <Compile Include="DB_CARGA_INICIAL.cs" />
+    <Compile Include="DB_ECO_CONSULTA_CALIBRE.cs" />
+    <Compile Include="DB_ECO_CONSULTA_TIPIFICACION.cs" />
+    <Compile Include="DB_ECO_CONSULTA_TIPOFRIO.cs" />
+    <Compile Include="DB_ESTRUCTURA_LINEA.cs" />
+    <Compile Include="DB_PROCESO_ALL.cs" />
+    <Compile Include="ECO_CONSULTA_CALIBRE.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_CALIBRE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_CALIBRE.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_CALIBRE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_TIPIFICACION.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_TIPIFICACION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_TIPIFICACION.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_TIPIFICACION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_TIPOFRIO.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_TIPOFRIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_TIPOFRIO.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_TIPOFRIO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_CONSULTA_INGRESO.cs" />
+    <Compile Include="ECO_CONSULTA_INGRESO.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_INGRESO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_INGRESO.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_INGRESO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ECO_MOD_SEMANA_A.cs" />
+    <Compile Include="DB_SEMANA_CONSULT.cs" />
+    <Compile Include="DB_VoiceCod.cs" />
+    <Compile Include="ECO_MOD_SEMANA_A.aspx.cs">
+      <DependentUpon>ECO_MOD_SEMANA_A.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_MOD_SEMANA_A.aspx.designer.cs">
+      <DependentUpon>ECO_MOD_SEMANA_A.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_SEMANA_CONSULT.aspx.cs">
+      <DependentUpon>ECO_SEMANA_CONSULT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_SEMANA_CONSULT.aspx.designer.cs">
+      <DependentUpon>ECO_SEMANA_CONSULT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_PRESIZER.aspx.cs">
+      <DependentUpon>JSON_DB_PRESIZER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_PRESIZER.aspx.designer.cs">
+      <DependentUpon>JSON_DB_PRESIZER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_PRESIZER.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="DB_ECO_ANUAL_SEMANA.cs" />
+    <Compile Include="DB_ECO_CALIBRE.cs" />
+    <Compile Include="DB_ECO_CONSULTA_ANUAL.cs" />
+    <Compile Include="DB_ECO_CONSULTA_SEMANA.cs" />
+    <Compile Include="DB_ECO_INGRESOS.cs" />
+    <Compile Include="DB_ECO_SEMANA.cs" />
+    <Compile Include="DB_ETIQUETA.cs" />
+    <Compile Include="DB_ETIQUETA_CONSULTA.cs" />
+    <Compile Include="ECO_ANUAL_SEMANA.aspx.cs">
+      <DependentUpon>ECO_ANUAL_SEMANA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_ANUAL_SEMANA.aspx.designer.cs">
+      <DependentUpon>ECO_ANUAL_SEMANA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CALIBRE.aspx.cs">
+      <DependentUpon>ECO_CALIBRE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CALIBRE.aspx.designer.cs">
+      <DependentUpon>ECO_CALIBRE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_ANUAL.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_ANUAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_ANUAL.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_ANUAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_SEMANA.aspx.cs">
+      <DependentUpon>ECO_CONSULTA_SEMANA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_CONSULTA_SEMANA.aspx.designer.cs">
+      <DependentUpon>ECO_CONSULTA_SEMANA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_INGRESOS.aspx.cs">
+      <DependentUpon>ECO_INGRESOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_INGRESOS.aspx.designer.cs">
+      <DependentUpon>ECO_INGRESOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ECO_SEMANA.aspx.cs">
+      <DependentUpon>ECO_SEMANA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ECO_SEMANA.aspx.designer.cs">
+      <DependentUpon>ECO_SEMANA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMF_GET_MOVIMIENTOS.aspx.cs">
+      <DependentUpon>JSON_ZMF_GET_MOVIMIENTOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMF_GET_MOVIMIENTOS.aspx.designer.cs">
+      <DependentUpon>JSON_ZMF_GET_MOVIMIENTOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ETIQUETA_STOCK.cs" />
+    <Compile Include="DB_ETIQUETA_VENTANA.cs" />
+    <Compile Include="DB_ETI_INS.cs" />
+    <Compile Include="DB_PROCESO_MOD.cs" />
+    <Compile Include="JSON_ZMF_MOV_QUERY_LOTE.aspx.cs">
+      <DependentUpon>JSON_ZMF_MOV_QUERY_LOTE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMF_MOV_QUERY_LOTE.aspx.designer.cs">
+      <DependentUpon>JSON_ZMF_MOV_QUERY_LOTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMF_GET_CENTRO_APP.aspx.cs">
+      <DependentUpon>JSON_ZMF_GET_CENTRO_APP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMF_GET_CENTRO_APP.aspx.designer.cs">
+      <DependentUpon>JSON_ZMF_GET_CENTRO_APP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CAMBIO_V.aspx.cs">
+      <DependentUpon>JSON_ZMOV_CAMBIO_V.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CAMBIO_V.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_CAMBIO_V.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CARGA_INICIAL.aspx.cs">
+      <DependentUpon>JSON_ZMOV_CARGA_INICIAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CARGA_INICIAL.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_CARGA_INICIAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CONSULTA_ETI.aspx.cs">
+      <DependentUpon>JSON_ZMOV_CONSULTA_ETI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CONSULTA_ETI.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_CONSULTA_ETI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CONSULTA_ETIQUETAS.aspx.cs">
+      <DependentUpon>JSON_ZMOV_CONSULTA_ETIQUETAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CONSULTA_ETIQUETAS.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_CONSULTA_ETIQUETAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CONSULTA_GTIN.aspx.cs">
+      <DependentUpon>JSON_ZMOV_CONSULTA_GTIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CONSULTA_GTIN.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_CONSULTA_GTIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ELIMINAR_ET.aspx.cs">
+      <DependentUpon>JSON_ZMOV_ELIMINAR_ET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ELIMINAR_ET.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_ELIMINAR_ET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ELIMINAR_TODO.aspx.cs">
+      <DependentUpon>JSON_ZMOV_ELIMINAR_TODO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ELIMINAR_TODO.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_ELIMINAR_TODO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ESTRUCTURA_LINEA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_ESTRUCTURA_LINEA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ESTRUCTURA_LINEA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_ESTRUCTURA_LINEA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ETIQUETA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_ETIQUETA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ETIQUETA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_ETIQUETA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ETIQUETA_CONSULTA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_ETIQUETA_CONSULTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ETIQUETA_CONSULTA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_ETIQUETA_CONSULTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ETIQUETA_VENTANA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_ETIQUETA_VENTANA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_ETIQUETA_VENTANA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_ETIQUETA_VENTANA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_INS_ETI.aspx.cs">
+      <DependentUpon>JSON_ZMOV_INS_ETI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_INS_ETI.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_INS_ETI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_MOD_PROCESO.aspx.cs">
+      <DependentUpon>JSON_ZMOV_MOD_PROCESO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_MOD_PROCESO.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_MOD_PROCESO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_PROCESO_ALL.aspx.cs">
+      <DependentUpon>JSON_ZMOV_PROCESO_ALL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_PROCESO_ALL.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_PROCESO_ALL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_HU_INFO.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_INFO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_HU_INFO.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_INFO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMF_GET_USER.aspx.cs">
+      <DependentUpon>JSON_ZMF_GET_USER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMF_GET_USER.aspx.designer.cs">
+      <DependentUpon>JSON_ZMF_GET_USER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_CONSULTA_ETIQUETA.cs" />
+    <Compile Include="JSON_ZMOV_CONSULTA_ETIQUETA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_CONSULTA_ETIQUETA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CONSULTA_ETIQUETA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_CONSULTA_ETIQUETA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_DET_ENTREGA_SAG.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_DET_ENTREGA_SAG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_DET_ENTREGA_SAG.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_DET_ENTREGA_SAG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FILAS.cs" />
+    <Compile Include="DB_PANTALLAS.cs" />
+    <Compile Include="JSON_ZMOV_FILAS.aspx.cs">
+      <DependentUpon>JSON_ZMOV_FILAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_FILAS.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_FILAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_PANTALLAS.aspx.cs">
+      <DependentUpon>JSON_ZMOV_PANTALLAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_PANTALLAS.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_PANTALLAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_DET_PEDIDO.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_DET_PEDIDO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_DET_PEDIDO.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_DET_PEDIDO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_DET_FACT.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_DET_FACT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_DET_FACT.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_DET_FACT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_DET_ENTREGA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_DET_ENTREGA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_DET_ENTREGA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_DET_ENTREGA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_STOCK_CONSULTA.cs" />
+    <Compile Include="DB_STOCK_CONSULTA_ZPL.cs" />
+    <Compile Include="JSON_ZMOV_SAG_CENTROS.aspx.cs">
+      <DependentUpon>JSON_ZMOV_SAG_CENTROS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_SAG_CENTROS.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_SAG_CENTROS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getAlmacen.cs" />
+    <Compile Include="JSON_ZMOV_QUERY_HU_ALMACEN.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_ALMACEN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_HU_ALMACEN.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_ALMACEN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_SELECCION_ETIQUETA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_SELECCION_ETIQUETA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_SELECCION_ETIQUETA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_SELECCION_ETIQUETA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_STOCK_CONSULTA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_STOCK_CONSULTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_STOCK_CONSULTA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_STOCK_CONSULTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_STOCK_NPARTIDA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_STOCK_NPARTIDA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_STOCK_NPARTIDA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_STOCK_NPARTIDA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_STOCK_ZPL.aspx.cs">
+      <DependentUpon>JSON_ZMOV_STOCK_ZPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_STOCK_ZPL.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_STOCK_ZPL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_TERMINADO_MANUAL.aspx.cs">
+      <DependentUpon>JSON_ZMOV_TERMINADO_MANUAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_TERMINADO_MANUAL.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_TERMINADO_MANUAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_TURNO_FECHA.aspx.cs">
+      <DependentUpon>JSON_ZMOV_TURNO_FECHA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_TURNO_FECHA.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_TURNO_FECHA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_VOICEPICK.aspx.cs">
+      <DependentUpon>JSON_ZMOV_VOICEPICK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_VOICEPICK.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_VOICEPICK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZRFC_QM_LOTEINFO_C.aspx.cs">
+      <DependentUpon>JSON_ZRFC_QM_LOTEINFO_C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZRFC_QM_LOTEINFO_C.aspx.designer.cs">
+      <DependentUpon>JSON_ZRFC_QM_LOTEINFO_C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_HU_READ.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_READ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_HU_READ.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_READ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_MATERIAL_CONSUMO.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_MATERIAL_CONSUMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_MATERIAL_CONSUMO.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_MATERIAL_CONSUMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_STOCK_PROCESO.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_STOCK_PROCESO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_STOCK_PROCESO.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_STOCK_PROCESO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZCALIDAD_CARACT_LOTES.cs" />
+    <Compile Include="JSON_ZMF_GET_UAT.aspx.cs">
+      <DependentUpon>JSON_ZMF_GET_UAT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMF_GET_UAT.aspx.designer.cs">
+      <DependentUpon>JSON_ZMF_GET_UAT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_GRUPO_CATE.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_GRUPO_CATE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_GRUPO_CATE.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_GRUPO_CATE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_SAG_EXTRAE.aspx.cs">
+      <DependentUpon>JSON_ZMOV_SAG_EXTRAE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_SAG_EXTRAE.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_SAG_EXTRAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZDDCRP_PROCESO.aspx.cs">
+      <DependentUpon>JSON_ZDDCRP_PROCESO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZDDCRP_PROCESO.aspx.designer.cs">
+      <DependentUpon>JSON_ZDDCRP_PROCESO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMF_GET_DAT_PROD.aspx.cs">
+      <DependentUpon>JSON_ZMF_GET_DAT_PROD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMF_GET_DAT_PROD.aspx.designer.cs">
+      <DependentUpon>JSON_ZMF_GET_DAT_PROD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_RECEPCION_GRANEL.aspx.cs">
+      <DependentUpon>JSON_DB_RECEPCION_GRANEL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_RECEPCION_GRANEL.aspx.designer.cs">
+      <DependentUpon>JSON_DB_RECEPCION_GRANEL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZDDCRP_PROCESO_PRZ.cs" />
+    <Compile Include="ZMF_GET_CENTRO_APP.cs" />
+    <Compile Include="ZMF_GET_DAT_PROD.cs" />
+    <Compile Include="ZMF_GET_MOVIMIENTOS.cs" />
+    <Compile Include="ZMF_GET_UAT.cs" />
+    <Compile Include="ZMF_GET_USER.cs" />
+    <Compile Include="ZMF_LEINT_HU_UPDATE.cs" />
+    <Compile Include="ZMF_MOV_QUERY_LOTE.cs" />
+    <Compile Include="ZMOV_CREATE_HU_PACK.cs" />
+    <Compile Include="ZMOV_CREATE_HU_UNPACK.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_HU_FRESCO.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_HU_FRESCOUAT.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_HU_FRESCO_V2.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_PT_FRESCO.cs" />
+    <Compile Include="ZMOV_HU_MOVER.cs" />
+    <Compile Include="ZMOV_QUERY_DET_ENTREGA.cs" />
+    <Compile Include="ZMOV_QUERY_DET_ENTREGA_SAG.cs" />
+    <Compile Include="ZMOV_QUERY_DET_FACT.cs" />
+    <Compile Include="ZMOV_QUERY_DET_PEDIDO.cs" />
+    <Compile Include="ZMOV_QUERY_GRUPO_CATE.cs" />
+    <Compile Include="ZMOV_QUERY_HU_ALMACEN.cs" />
+    <Compile Include="ZMOV_QUERY_HU_INFO.cs" />
+    <Compile Include="ZMOV_QUERY_HU_READ.cs" />
+    <Compile Include="ZMOV_QUERY_MATERIAL_CONSUMO.cs" />
+    <Compile Include="ZMOV_QUERY_STOCK_PROCESO.cs" />
+    <Compile Include="ZMOV_SAG_CENTROS.cs" />
+    <Compile Include="ZMOV_SAG_EXTRAE.cs" />
+    <Compile Include="ZMOV_STOCK_NPARTIDA.cs" />
+    <Compile Include="ZMOV_UPDATE_CALIDAD_LOTE.cs" />
+    <Compile Include="JSON_CONFIG_LINEA.aspx.cs">
+      <DependentUpon>JSON_CONFIG_LINEA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_CONFIG_LINEA.aspx.designer.cs">
+      <DependentUpon>JSON_CONFIG_LINEA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZRFC_QM_LOTEINFO.aspx.cs">
+      <DependentUpon>JSON_ZRFC_QM_LOTEINFO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZRFC_QM_LOTEINFO.aspx.designer.cs">
+      <DependentUpon>JSON_ZRFC_QM_LOTEINFO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZMOV_CREATE_RECEP_GR_FRESCO.cs" />
+    <Compile Include="DB_VISTA.cs" />
+    <Compile Include="JSON_VISTA_ZPL.aspx.cs">
+      <DependentUpon>JSON_VISTA_ZPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_VISTA_ZPL.aspx.designer.cs">
+      <DependentUpon>JSON_VISTA_ZPL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CREATE_HU.aspx.cs">
+      <DependentUpon>JSON_ZMOV_CREATE_HU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_CREATE_HU.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_CREATE_HU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZMOV_CREATE_HU.cs" />
+    <Compile Include="DB_IMAGE.cs" />
+    <Compile Include="DB_ZPL.cs" />
+    <Compile Include="JSON_DB_ZPL.aspx.cs">
+      <DependentUpon>JSON_DB_ZPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_ZPL.aspx.designer.cs">
+      <DependentUpon>JSON_DB_ZPL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_IMAGE_ZPL.aspx.cs">
+      <DependentUpon>JSON_IMAGE_ZPL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_IMAGE_ZPL.aspx.designer.cs">
+      <DependentUpon>JSON_IMAGE_ZPL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_STOCK_LOTE.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_STOCK_LOTE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_STOCK_LOTE.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_STOCK_LOTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_STOCK_ALMACEN.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_STOCK_ALMACEN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_STOCK_ALMACEN.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_STOCK_ALMACEN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_MATERIAL.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_MATERIAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_MATERIAL.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_MATERIAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_PRODUCTOR.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_PRODUCTOR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_PRODUCTOR.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_PRODUCTOR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_DB_RECEPCION.aspx.cs">
+      <DependentUpon>JSON_DB_RECEPCION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_RECEPCION.aspx.designer.cs">
+      <DependentUpon>JSON_DB_RECEPCION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_VARIEDAD.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_VARIEDAD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_VARIEDAD.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_VARIEDAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_TRATAMIENTO.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_TRATAMIENTO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_TRATAMIENTO.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_TRATAMIENTO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZPL_SAVE.aspx.cs">
+      <DependentUpon>JSON_ZPL_SAVE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZPL_SAVE.aspx.designer.cs">
+      <DependentUpon>JSON_ZPL_SAVE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="print.asmx.cs">
+      <DependentUpon>print.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RawPrinterHelper.cs" />
+    <Compile Include="ZDDCRP_PROCESO.cs" />
+    <Compile Include="ZMOV_CREATE_AGRUPALOTE.cs" />
+    <Compile Include="ZMOV_CREATE_RECEP_GRANEL.cs" />
+    <Compile Include="ZMOV_QUERY_MATERIAL.cs" />
+    <Compile Include="ZMOV_QUERY_PRODUCTOR.cs" />
+    <Compile Include="ZMOV_QUERY_STOCK_ALMACEN.cs" />
+    <Compile Include="ZMOV_QUERY_STOCK_LOTE.cs" />
+    <Compile Include="ZMOV_QUERY_STOCK_SUBCONTR.cs" />
+    <Compile Include="ZMOV_QUERY_TIPO_FRIO.cs" />
+    <Compile Include="JSON_ZMOV_QUERY_TIPO_FRIO.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_TIPO_FRIO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_TIPO_FRIO.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_TIPO_FRIO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ZMOV_QUERY_ESPECIE.cs" />
+    <Compile Include="JSON_ZMOV_QUERY_ESPECIE.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_ESPECIE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_ESPECIE.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_ESPECIE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SON_GET_SERVICES_LIST.aspx.cs">
+      <DependentUpon>SON_GET_SERVICES_LIST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SON_GET_SERVICES_LIST.aspx.designer.cs">
+      <DependentUpon>SON_GET_SERVICES_LIST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_HU_DATOADICIONAL.aspx.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_DATOADICIONAL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_ZMOV_QUERY_HU_DATOADICIONAL.aspx.designer.cs">
+      <DependentUpon>JSON_ZMOV_QUERY_HU_DATOADICIONAL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="createRFC.aspx.cs">
+      <DependentUpon>createRFC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="createRFC.aspx.designer.cs">
+      <DependentUpon>createRFC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB_LOGIN.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="JSON_DB_LOGIN.aspx.cs">
+      <DependentUpon>JSON_DB_LOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSON_DB_LOGIN.aspx.designer.cs">
+      <DependentUpon>JSON_DB_LOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectXml.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rfcNET.asmx.cs">
+      <DependentUpon>rfcNET.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZMOV_QUERY_HU_DATOADICIONAL.cs" />
+    <Compile Include="ZMOV_QUERY_TRATAMIENTO.cs" />
+    <Compile Include="ZMOV_QUERY_VARIEDAD.cs" />
+    <Compile Include="ZMOV_UPDATE_CRT_CALIDAD.cs" />
+    <Compile Include="ZMOV_UPDATE_HU_CABECERA.cs" />
+    <Compile Include="ZMOV_UPDATE_HU_HEADER.cs" />
+    <Compile Include="ZMOV_UPDATE_HU_HEADER_N.cs" />
+    <Compile Include="ZMOV_UPDATE_HU_PAISES.cs" />
+    <Compile Include="ZMOV_UPDATE_HU_ZFIELDS.cs" />
+    <Compile Include="ZRFC_QM_LOTEINFO.cs" />
+    <Compile Include="ZRFC_QM_LOTEINFO_C.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ZPL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://sistema-test.ptichile.cl/ws/ws_pti_recepcion.php%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\cl.ptichile.sistema-test\</RelPath>
+      <UpdateFromURL>http://sistema-test.ptichile.cl/ws/ws_pti_recepcion.php%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>rfcBaika_cl_ptichile_sistema_test_WSDLService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\cl.ptichile.sistema-test\PtiChile.wsdl" />
+    <None Include="Web References\cl.ptichile.sistema-test\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="UNITEC_NOTIFICACION.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39512</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

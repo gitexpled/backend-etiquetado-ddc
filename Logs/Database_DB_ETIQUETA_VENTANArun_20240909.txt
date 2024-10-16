@@ -1,0 +1,82 @@
+Timestamp: 2024-09-09 11:32:48
+Connection Status: Connection Opened
+Connection String: Data Source=10.20.1.71;Initial Catalog=DDC_ETIQUETADO_NEW;User Id=sa;Password=expled08*.;Max Pool Size=50000;Pooling=True;
+Connection Time: 52,003 ms
+--------------------------------------------------
+Timestamp: 2024-09-09 11:32:49
+SQL Error:
+Message: No se encontró el procedimiento almacenado 'set_logpantalla'.
+Error Code: -2146232060
+Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at rfcBaika.DB_MONITOR_PANTALLA.InsertLog(String ip) in E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\DB_MONITOR_PANTALL.cs:line 78
+   at rfcBaika.DB_ETIQUETA_VENTANA.run(request_DB_ETIQUETA_VENTANA datos) in E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\DB_ETIQUETA_VENTANA.cs:line 120
+--------------------------------------------------
+Timestamp: 2024-09-09 11:32:58
+Connection Closed
+Timestamp: 2024-09-09 11:33:44
+SQL Error:
+Message: Login failed for user 'sa'.
+Error Code: -2146232060
+Stack Trace:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at rfcBaika.DB_ETIQUETA_VENTANA.run(request_DB_ETIQUETA_VENTANA datos) in E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\DB_ETIQUETA_VENTANA.cs:line 112
+--------------------------------------------------
+Timestamp: 2024-09-09 11:34:20
+Connection Status: Connection Opened
+Connection String: Data Source=10.99.90.11;Initial Catalog=DDC_ETIQUETADO_NEW;User Id=sa;Password=MB021Z/A;Max Pool Size=50000;Pooling=True;
+Connection Time: 6,0004 ms
+--------------------------------------------------
+Timestamp: 2024-09-09 11:34:20
+SQL Error:
+Message: Procedure or function 'set_logpantalla' expects parameter '@ip_pantalla', which was not supplied.
+Error Code: -2146232060
+Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at rfcBaika.DB_MONITOR_PANTALLA.InsertLog(String ip) in E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\DB_MONITOR_PANTALL.cs:line 78
+   at rfcBaika.DB_ETIQUETA_VENTANA.run(request_DB_ETIQUETA_VENTANA datos) in E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\DB_ETIQUETA_VENTANA.cs:line 120
+--------------------------------------------------
+Timestamp: 2024-09-09 11:34:26
+Connection Closed
+Timestamp: 2024-09-09 11:35:54
+Connection Status: Connection Opened
+Connection String: Data Source=10.99.90.11;Initial Catalog=DDC_ETIQUETADO_NEW;User Id=sa;Password=MB021Z/A;Max Pool Size=50000;Pooling=True;
+Connection Time: 15,0008 ms
+--------------------------------------------------
+Timestamp: 2024-09-09 11:35:54
+SQL Command: select pr.estado, pr.centro, pos.ip_pantalla, pos.pantalla_zpl, zv.tipo_material, zv.stock, zv.calibre, zv.kilos_material, zv.ip_Zebra, zv.zpl, zv.proceso, zv.salida, et.calidad, zv.Line, et.id from proceso pr join zpl_ventana zv on zv.proceso = pr.proceso join posicion_zpl pos on pos.id = zv.id_posicion join etiqueta et on pr.proceso = et.proceso and et.id = zv.id_etiqueta where pos.ip_pantalla = @Ip and (zv.stock > 0 or pr.estado = 'VIGENTE')
+Execution Time: 165,0094 ms
+--------------------------------------------------
+Timestamp: 2024-09-09 11:35:54
+Connection Closed

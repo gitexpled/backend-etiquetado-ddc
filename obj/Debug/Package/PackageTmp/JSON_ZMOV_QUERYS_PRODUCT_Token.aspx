@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JSON_ZMOV_QUERYS_PRODUCT_Token.aspx.cs" Inherits="rfcBaika.JSON_ZMOV_QUERYS_PRODUCT_Token" %>
+<asp:literal runat="server" ID="json"></asp:literal>

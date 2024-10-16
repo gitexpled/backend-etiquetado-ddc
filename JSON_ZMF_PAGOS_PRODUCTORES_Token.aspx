@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JSON_ZMF_PAGOS_PRODUCTORES_Token.aspx.cs" Inherits="rfcBaika.JSON_ZMF_PAGOS_PRODUCTORES_Token" %>
+<asp:literal runat="server" ID="json"></asp:literal>

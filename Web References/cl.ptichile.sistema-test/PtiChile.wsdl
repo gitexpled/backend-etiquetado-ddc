@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:PtiChile" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns="http://schemas.xmlsoap.org/wsdl/" name="PtiChile" targetNamespace="urn:PtiChile" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="FilterRequest">
+    <wsdl:part name="params" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="FilterResponse">
+    <wsdl:part name="result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DefectosRequest">
+    <wsdl:part name="idExportador" type="xsd:integer" />
+    <wsdl:part name="idEspecie" type="xsd:integer" />
+  </wsdl:message>
+  <wsdl:message name="DefectosResponse">
+    <wsdl:part name="Xml" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="FirmezaRequest">
+    <wsdl:part name="idExportador" type="xsd:integer" />
+    <wsdl:part name="idEspecie" type="xsd:integer" />
+  </wsdl:message>
+  <wsdl:message name="FirmezaResponse">
+    <wsdl:part name="Xml" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="ColorRequest">
+    <wsdl:part name="idExportador" type="xsd:integer" />
+    <wsdl:part name="idEspecie" type="xsd:integer" />
+  </wsdl:message>
+  <wsdl:message name="ColorResponse">
+    <wsdl:part name="Xml" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="CalibreRequest">
+    <wsdl:part name="idExportador" type="xsd:integer" />
+    <wsdl:part name="idEspecie" type="xsd:integer" />
+  </wsdl:message>
+  <wsdl:message name="CalibreResponse">
+    <wsdl:part name="Xml" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="AccesoRequest">
+    <wsdl:part name="Usuario" type="xsd:string" />
+    <wsdl:part name="Contrasena" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="AccesoResponse">
+    <wsdl:part name="Xml" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="CapturaLoteRequest">
+    <wsdl:part name="idExportador" type="xsd:integer" />
+    <wsdl:part name="idEspecie" type="xsd:integer" />
+    <wsdl:part name="idCentral" type="xsd:string" />
+    <wsdl:part name="Lote" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="CapturaLoteResponse">
+    <wsdl:part name="Xml" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="MasterRequest">
+    <wsdl:part name="Especie" type="xsd:integer" />
+    <wsdl:part name="Exportador" type="xsd:integer" />
+    <wsdl:part name="Partida" type="xsd:integer" />
+    <wsdl:part name="Estado" type="xsd:string" />
+    <wsdl:part name="CodCentral" type="xsd:string" />
+    <wsdl:part name="CodProductor" type="xsd:string" />
+    <wsdl:part name="NroGuiaDespacho" type="xsd:integer" />
+    <wsdl:part name="FechaRecepcion" type="xsd:string" />
+    <wsdl:part name="FechaCosecha" type="xsd:string" />
+    <wsdl:part name="CodVariedad" type="xsd:integer" />
+    <wsdl:part name="EstibaCamion" type="xsd:string" />
+    <wsdl:part name="EsponjasCloradas" type="xsd:string" />
+    <wsdl:part name="NroBandeja" type="xsd:integer" />
+    <wsdl:part name="HoraLlegada" type="xsd:time" />
+    <wsdl:part name="KiloMuestra" type="xsd:decimal" />
+    <wsdl:part name="KiloNeto" type="xsd:decimal" />
+    <wsdl:part name="TempIngreso" type="xsd:decimal" />
+    <wsdl:part name="TempSalida" type="xsd:decimal" />
+    <wsdl:part name="Lote" type="xsd:string" />
+    <wsdl:part name="Huerto" type="xsd:string" />
+    <wsdl:part name="Hidro" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="MasterResponse">
+    <wsdl:part name="result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="FilterPort">
+    <wsdl:operation name="RecibeMaster">
+      <wsdl:input message="tns:MasterRequest" />
+      <wsdl:output message="tns:MasterResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="AccesoSis">
+      <wsdl:input message="tns:AccesoRequest" />
+      <wsdl:output message="tns:AccesoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="CapturaLote">
+      <wsdl:input message="tns:CapturaLoteRequest" />
+      <wsdl:output message="tns:CapturaLoteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Defectos">
+      <wsdl:input message="tns:DefectosRequest" />
+      <wsdl:output message="tns:DefectosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Firmeza">
+      <wsdl:input message="tns:FirmezaRequest" />
+      <wsdl:output message="tns:FirmezaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Color">
+      <wsdl:input message="tns:ColorRequest" />
+      <wsdl:output message="tns:ColorResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Calibre">
+      <wsdl:input message="tns:CalibreRequest" />
+      <wsdl:output message="tns:CalibreResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WsPti_Binding" type="tns:FilterPort">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="RecibeMaster">
+      <soap:operation soapAction="urn:MasterAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccesoSis">
+      <soap:operation soapAction="urn:MasterAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapturaLote">
+      <soap:operation soapAction="urn:MasterAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Defectos">
+      <soap:operation soapAction="urn:MasterAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Firmeza">
+      <soap:operation soapAction="urn:MasterAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Color">
+      <soap:operation soapAction="urn:MasterAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Calibre">
+      <soap:operation soapAction="urn:MasterAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:Organization" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSDLService">
+    <wsdl:port name="FilterPort" binding="tns:WsPti_Binding">
+      <soap:address location="http://sistema-test.ptichile.cl/ws/ws_pti_recepcion.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

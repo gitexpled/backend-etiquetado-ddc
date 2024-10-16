@@ -1,0 +1,104 @@
+<html>
+<head><title>Log Report</title></head>
+<body>
+<h1>Log Report</h1>
+<h2>Database Logs</h2>
+<table border='1' cellpadding='5' cellspacing='0'>
+<tr><th>Timestamp</th><th>Details</th></tr>
+<tr><td>2024-08-26 12:54:22</td><td>Connection Status: Connection Opened</td>
+<tr><td></td><td>Connection String: Data Source=10.20.1.71;Initial Catalog=DDC_ETIQUETADO_NEW;User Id=sa;Password=expled08*.;Max Pool Size=50000;Pooling=True;</td></tr>
+<tr><td></td><td>Connection Time: 2177,1246 ms</td></tr>
+</td></tr>
+<tr><td>2024-08-26 12:54:25</td><td>SQL Command: select pr.estado, pr.centro, pos.ip_pantalla, pos.pantalla_zpl, zv.tipo_material, zv.stock, zv.calibre, zv.kilos_material, zv.ip_Zebra, zv.zpl, zv.proceso, zv.salida, et.calidad, zv.Line, et.id from proceso pr join zpl_ventana zv on zv.proceso = pr.proceso join posicion_zpl pos on pos.id = zv.id_posicion join etiqueta et on pr.proceso = et.proceso and et.id = zv.id_etiqueta where pos.ip_pantalla = @Ip and (zv.stock > 0 or pr.estado = 'VIGENTE')</td>
+<tr><td></td><td>Execution Time: 79,0045 ms</td></tr>
+</td></tr>
+<tr><td></td><td>Query Results:</td></tr>
+<tr><td></td><td>estado: VIGENTE</td></tr>
+<tr><td></td><td>centro: DC07</td></tr>
+<tr><td></td><td>ip_pantalla: 10.100.51.89</td></tr>
+<tr><td></td><td>pantalla_zpl: 3</td></tr>
+<tr><td></td><td>tipo_material: </td></tr>
+<tr><td></td><td>stock: -1</td></tr>
+<tr><td></td><td>calibre: 150</td></tr>
+<tr><td></td><td>kilos_material: 22</td></tr>
+<tr><td></td><td>ip_Zebra: 10.100.51.85</td></tr>
+<tr><td></td><td>zpl: ^XA^CI28^LH0,0^MD2^PR4^A0N,24,24^FO44,16^FDAPPLES^FS^A0N,24,24^FO200,16^FDTENROY/ROYAL GALA^FS^A0N,24,24^FO260,16^FD^FS^A0N,24,24^FO500,16^FD^FS^A0N,24,24^FO600,16^FDAC-01 SM SERVICE^FS^FS^A0N,23,23^FO32,55^FDORCHAD/GROWER: XT11^FS^FS^A0N,18,18^FO32,80^FDCOMMUNE: RIO CLARO^FS^FS^A0N,18,18^FO32,100^FDPROVINCE: TALCA^FS^FS^A0N,24,24^FO31,125^FDCSG: 116654^FS^FS^A0N,24,24^FO300,128^FDSE05001308^FS^FS^A0N,18,18^FO310,54^FDGGN: 4063651025453^FS^FS^A0N,18,18^FO310,80^FDSDP: ^FS^FS^A0N,18,18^FO310,100^FD07 REGIÓN^FS^FS^A0N,19,19^FO500,50^FDNET WEIGHT 22 KG   ^FS^A0N,19,19^FO625,75^FD^FS^A0N,30,30^FO500,75^FDSEMA762^FSPRIMERA LINEA^FS^FS^FO30,40^GB740,0,1,,10^FS^FSLINEA SOBRE PACKED BY^FS^FS^FO30,150^GB450,0,1,,10^FS^FSBARCODESUPERIOR^FS^AON30,30^FO520,110^BY2^BCN,65,N,N,N^FD@MANZANACORRELATIVO^FS^A0N,25,25^FO580,190^FD@MANZANACORRELATIVO^FS^FSLINEACDIAMETRO^FS^FS^FO480,100^GB290,0,1,,10^FS^FSLINEA BAJO CÓDIGO^FS^FS^FO480,220^GB290,0,1,,10^FS^FSLINEA SOBRE TURNO^FS^FS^FO480,350^GB290,0,1,,10^FS^FSCUADRO NEGRO^FS^FS^FO620,295^GB120,40,20,,10^FSLINEA BAJO EXPORTED BY^FS^FS^FO30,321^GB450,0,1,,10^FS^FSLINEA VERTICAL^FS^FS^FO480,10^GB0,390,1,,10^FS^A0N,24,24^FO490,235^FDPACKED ON: 26/08/2024^^FS^A0N,24,24^FO490,265^FDPACKED DATE: Aug 26^FS^A0N,18,18^FO490,310^FDCLASS / CAT 1^FS^A0N,21,21^FO600,355^FDL-2^FS^A0N,21,21^FO635,355^FDT-1^FS^A0N,21,21^FO675,355^FDS-3^FS^FS^A0N,18,18^FO600,380^FDPRODUCT OF CHILE.^FS^FS^A0N,45,45^FO210,190^FDFYG ^FS^FS^A0N,45,45^FO210,240^FD150^^FS^A0N,19,19^FO32,160^FDPACKED BY^FS^A0N,19,19^FO32,182^FDC.F.Luis Cruz^FS^A0N,18,18^FO32,207^FDCOMMUNE: Romeral^FS^A0N,18,18^FO32,232^FDPROVINCE: Curico^FS^A0N,18,18^FO32,257^FDCSP: 87290^FS^A0N,18,18^FO32,277^FDFDA: 10724472446^FS^A0N,21,21^FO30,300^FDEXPORTED BY: COMERCIAL SM EXPORT LTDA ^FS^^FS^BY1^FO46,330^B3N,46,40,N,N^FV>;>(01)(13)240826(10)116654^FS^A0N,18,18^FO45,380^FV(01)(13)240826(10)116654^FS^XZ</td></tr>
+<tr><td></td><td>proceso: SE05001308</td></tr>
+<tr><td></td><td>salida: 3</td></tr>
+<tr><td></td><td>calidad: FYG</td></tr>
+<tr><td></td><td>Line: 2</td></tr>
+<tr><td></td><td>id: 1233539</td></tr>
+</td></tr>
+<tr><td></td><td>Query Results:</td></tr>
+<tr><td></td><td>estado: VIGENTE</td></tr>
+<tr><td></td><td>centro: DC07</td></tr>
+<tr><td></td><td>ip_pantalla: 10.100.51.89</td></tr>
+<tr><td></td><td>pantalla_zpl: 0</td></tr>
+<tr><td></td><td>tipo_material: </td></tr>
+<tr><td></td><td>stock: -1</td></tr>
+<tr><td></td><td>calibre: 150</td></tr>
+<tr><td></td><td>kilos_material: 20</td></tr>
+<tr><td></td><td>ip_Zebra: 10.100.51.85</td></tr>
+<tr><td></td><td>zpl: ^XA^CI28^LH0,0^MD2^PR4^A0N,24,24^FO44,16^FDAPPLES^FS^A0N,24,24^FO200,16^FDTENROY/ROYAL GALA^FS^A0N,24,24^FO260,16^FD^FS^A0N,24,24^FO500,16^FD^FS^A0N,24,24^FO600,16^FDAC-01 SM SERVICE^FS^FS^A0N,23,23^FO32,55^FDORCHAD/GROWER: XT11^FS^FS^A0N,18,18^FO32,80^FDCOMMUNE: RIO CLARO^FS^FS^A0N,18,18^FO32,100^FDPROVINCE: TALCA^FS^FS^A0N,24,24^FO31,125^FDCSG: 116654^FS^FS^A0N,24,24^FO300,128^FDSE05001308^FS^FS^A0N,18,18^FO310,54^FDGGN: 4063651025453^FS^FS^A0N,18,18^FO310,80^FDSDP: ^FS^FS^A0N,18,18^FO310,100^FD07 REGIÓN^FS^FS^A0N,19,19^FO500,50^FDNET WEIGHT 20 KG   ^FS^A0N,19,19^FO625,75^FD^FS^A0N,30,30^FO500,75^FDSEMA918^FSPRIMERA LINEA^FS^FS^FO30,40^GB740,0,1,,10^FS^FSLINEA SOBRE PACKED BY^FS^FS^FO30,150^GB450,0,1,,10^FS^FSBARCODESUPERIOR^FS^AON30,30^FO520,110^BY2^BCN,65,N,N,N^FD@MANZANACORRELATIVO^FS^A0N,25,25^FO580,190^FD@MANZANACORRELATIVO^FS^FSLINEACDIAMETRO^FS^FS^FO480,100^GB290,0,1,,10^FS^FSLINEA BAJO CÓDIGO^FS^FS^FO480,220^GB290,0,1,,10^FS^FSLINEA SOBRE TURNO^FS^FS^FO480,350^GB290,0,1,,10^FS^FSCUADRO NEGRO^FS^FS^FO620,295^GB120,40,20,,10^FSLINEA BAJO EXPORTED BY^FS^FS^FO30,321^GB450,0,1,,10^FS^FSLINEA VERTICAL^FS^FS^FO480,10^GB0,390,1,,10^FS^A0N,24,24^FO490,235^FDPACKED ON: 26/08/2024^^FS^A0N,24,24^FO490,265^FDPACKED DATE: Aug 26^FS^A0N,18,18^FO490,310^FDCLASS / CAT 1^FS^A0N,21,21^FO600,355^FDL-2^FS^A0N,21,21^FO635,355^FDT-1^FS^A0N,21,21^FO675,355^FDS-3^FS^FS^A0N,18,18^FO600,380^FDPRODUCT OF CHILE.^FS^FS^A0N,45,45^FO210,190^FDEXFAA ^FS^FS^A0N,45,45^FO210,240^FD150^^FS^A0N,19,19^FO32,160^FDPACKED BY^FS^A0N,19,19^FO32,182^FDC.F.Luis Cruz^FS^A0N,18,18^FO32,207^FDCOMMUNE: Romeral^FS^A0N,18,18^FO32,232^FDPROVINCE: Curico^FS^A0N,18,18^FO32,257^FDCSP: 87290^FS^A0N,18,18^FO32,277^FDFDA: 10724472446^FS^A0N,21,21^FO30,300^FDEXPORTED BY: COMERCIAL SM EXPORT LTDA ^FS^^FS^BY1^FO46,330^B3N,46,40,N,N^FV>;>(01)(13)240826(10)116654^FS^A0N,18,18^FO45,380^FV(01)(13)240826(10)116654^FS^XZ</td></tr>
+<tr><td></td><td>proceso: SE05001308</td></tr>
+<tr><td></td><td>salida: 3</td></tr>
+<tr><td></td><td>calidad: EXFAA</td></tr>
+<tr><td></td><td>Line: 2</td></tr>
+<tr><td></td><td>id: 1233536</td></tr>
+</td></tr>
+<tr><td></td><td>Query Results:</td></tr>
+<tr><td></td><td>estado: VIGENTE</td></tr>
+<tr><td></td><td>centro: DC07</td></tr>
+<tr><td></td><td>ip_pantalla: 10.100.51.89</td></tr>
+<tr><td></td><td>pantalla_zpl: 1</td></tr>
+<tr><td></td><td>tipo_material: </td></tr>
+<tr><td></td><td>stock: -1</td></tr>
+<tr><td></td><td>calibre: 150</td></tr>
+<tr><td></td><td>kilos_material: 20</td></tr>
+<tr><td></td><td>ip_Zebra: 10.100.51.85</td></tr>
+<tr><td></td><td>zpl: ^XA^CI28^LH0,0^MD2^PR4^A0N,24,24^FO44,16^FDAPPLES^FS^A0N,24,24^FO200,16^FDTENROY/ROYAL GALA^FS^A0N,24,24^FO260,16^FD^FS^A0N,24,24^FO500,16^FD^FS^A0N,24,24^FO600,16^FDAC-01 SM SERVICE^FS^FS^A0N,23,23^FO32,55^FDORCHAD/GROWER: XT11^FS^FS^A0N,18,18^FO32,80^FDCOMMUNE: RIO CLARO^FS^FS^A0N,18,18^FO32,100^FDPROVINCE: TALCA^FS^FS^A0N,24,24^FO31,125^FDCSG: 116654^FS^FS^A0N,24,24^FO300,128^FDSE05001308^FS^FS^A0N,18,18^FO310,54^FDGGN: 4063651025453^FS^FS^A0N,18,18^FO310,80^FDSDP: ^FS^FS^A0N,18,18^FO310,100^FD07 REGIÓN^FS^FS^A0N,19,19^FO500,50^FDNET WEIGHT 20 KG   ^FS^A0N,19,19^FO625,75^FD^FS^A0N,30,30^FO500,75^FDSEMA917^FSPRIMERA LINEA^FS^FS^FO30,40^GB740,0,1,,10^FS^FSLINEA SOBRE PACKED BY^FS^FS^FO30,150^GB450,0,1,,10^FS^FSBARCODESUPERIOR^FS^AON30,30^FO520,110^BY2^BCN,65,N,N,N^FD@MANZANACORRELATIVO^FS^A0N,25,25^FO580,190^FD@MANZANACORRELATIVO^FS^FSLINEACDIAMETRO^FS^FS^FO480,100^GB290,0,1,,10^FS^FSLINEA BAJO CÓDIGO^FS^FS^FO480,220^GB290,0,1,,10^FS^FSLINEA SOBRE TURNO^FS^FS^FO480,350^GB290,0,1,,10^FS^FSCUADRO NEGRO^FS^FS^FO620,295^GB120,40,20,,10^FSLINEA BAJO EXPORTED BY^FS^FS^FO30,321^GB450,0,1,,10^FS^FSLINEA VERTICAL^FS^FS^FO480,10^GB0,390,1,,10^FS^A0N,24,24^FO490,235^FDPACKED ON: 26/08/2024^^FS^A0N,24,24^FO490,265^FDPACKED DATE: Aug 26^FS^A0N,18,18^FO490,310^FDCLASS / CAT 1^FS^A0N,21,21^FO600,355^FDL-2^FS^A0N,21,21^FO635,355^FDT-1^FS^A0N,21,21^FO675,355^FDS-3^FS^FS^A0N,18,18^FO600,380^FDPRODUCT OF CHILE.^FS^FS^A0N,45,45^FO210,190^FDEXFAAA ^FS^FS^A0N,45,45^FO210,240^FD150^^FS^A0N,19,19^FO32,160^FDPACKED BY^FS^A0N,19,19^FO32,182^FDC.F.Luis Cruz^FS^A0N,18,18^FO32,207^FDCOMMUNE: Romeral^FS^A0N,18,18^FO32,232^FDPROVINCE: Curico^FS^A0N,18,18^FO32,257^FDCSP: 87290^FS^A0N,18,18^FO32,277^FDFDA: 10724472446^FS^A0N,21,21^FO30,300^FDEXPORTED BY: COMERCIAL SM EXPORT LTDA ^FS^^FS^BY1^FO46,330^B3N,46,40,N,N^FV>;>(01)(13)240826(10)116654^FS^A0N,18,18^FO45,380^FV(01)(13)240826(10)116654^FS^XZ</td></tr>
+<tr><td></td><td>proceso: SE05001308</td></tr>
+<tr><td></td><td>salida: 3</td></tr>
+<tr><td></td><td>calidad: EXFAAA</td></tr>
+<tr><td></td><td>Line: 2</td></tr>
+<tr><td></td><td>id: 1233537</td></tr>
+</td></tr>
+<tr><td></td><td>Query Results:</td></tr>
+<tr><td></td><td>estado: VIGENTE</td></tr>
+<tr><td></td><td>centro: DC07</td></tr>
+<tr><td></td><td>ip_pantalla: 10.100.51.89</td></tr>
+<tr><td></td><td>pantalla_zpl: 2</td></tr>
+<tr><td></td><td>tipo_material: </td></tr>
+<tr><td></td><td>stock: -1</td></tr>
+<tr><td></td><td>calibre: 150</td></tr>
+<tr><td></td><td>kilos_material: 20</td></tr>
+<tr><td></td><td>ip_Zebra: 10.100.51.85</td></tr>
+<tr><td></td><td>zpl: ^XA^CI28^LH0,0^MD2^PR4^A0N,24,24^FO44,16^FDAPPLES^FS^A0N,24,24^FO200,16^FDTENROY/ROYAL GALA^FS^A0N,24,24^FO260,16^FD^FS^A0N,24,24^FO500,16^FD^FS^A0N,24,24^FO600,16^FDAC-01 SM SERVICE^FS^FS^A0N,23,23^FO32,55^FDORCHAD/GROWER: XT11^FS^FS^A0N,18,18^FO32,80^FDCOMMUNE: RIO CLARO^FS^FS^A0N,18,18^FO32,100^FDPROVINCE: TALCA^FS^FS^A0N,24,24^FO31,125^FDCSG: 116654^FS^FS^A0N,24,24^FO300,128^FDSE05001308^FS^FS^A0N,18,18^FO310,54^FDGGN: 4063651025453^FS^FS^A0N,18,18^FO310,80^FDSDP: ^FS^FS^A0N,18,18^FO310,100^FD07 REGIÓN^FS^FS^A0N,19,19^FO500,50^FDNET WEIGHT 20 KG   ^FS^A0N,19,19^FO625,75^FD^FS^A0N,30,30^FO500,75^FDSEMA917^FSPRIMERA LINEA^FS^FS^FO30,40^GB740,0,1,,10^FS^FSLINEA SOBRE PACKED BY^FS^FS^FO30,150^GB450,0,1,,10^FS^FSBARCODESUPERIOR^FS^AON30,30^FO520,110^BY2^BCN,65,N,N,N^FD@MANZANACORRELATIVO^FS^A0N,25,25^FO580,190^FD@MANZANACORRELATIVO^FS^FSLINEACDIAMETRO^FS^FS^FO480,100^GB290,0,1,,10^FS^FSLINEA BAJO CÓDIGO^FS^FS^FO480,220^GB290,0,1,,10^FS^FSLINEA SOBRE TURNO^FS^FS^FO480,350^GB290,0,1,,10^FS^FSCUADRO NEGRO^FS^FS^FO620,295^GB120,40,20,,10^FSLINEA BAJO EXPORTED BY^FS^FS^FO30,321^GB450,0,1,,10^FS^FSLINEA VERTICAL^FS^FS^FO480,10^GB0,390,1,,10^FS^A0N,24,24^FO490,235^FDPACKED ON: 26/08/2024^^FS^A0N,24,24^FO490,265^FDPACKED DATE: Aug 26^FS^A0N,18,18^FO490,310^FDCLASS / CAT 1^FS^A0N,21,21^FO600,355^FDL-2^FS^A0N,21,21^FO635,355^FDT-1^FS^A0N,21,21^FO675,355^FDS-3^FS^FS^A0N,18,18^FO600,380^FDPRODUCT OF CHILE.^FS^FS^A0N,45,45^FO210,190^FDEXF ^FS^FS^A0N,45,45^FO210,240^FD150^^FS^A0N,19,19^FO32,160^FDPACKED BY^FS^A0N,19,19^FO32,182^FDC.F.Luis Cruz^FS^A0N,18,18^FO32,207^FDCOMMUNE: Romeral^FS^A0N,18,18^FO32,232^FDPROVINCE: Curico^FS^A0N,18,18^FO32,257^FDCSP: 87290^FS^A0N,18,18^FO32,277^FDFDA: 10724472446^FS^A0N,21,21^FO30,300^FDEXPORTED BY: COMERCIAL SM EXPORT LTDA ^FS^^FS^BY1^FO46,330^B3N,46,40,N,N^FV>;>(01)(13)240826(10)116654^FS^A0N,18,18^FO45,380^FV(01)(13)240826(10)116654^FS^XZ</td></tr>
+<tr><td></td><td>proceso: SE05001308</td></tr>
+<tr><td></td><td>salida: 3</td></tr>
+<tr><td></td><td>calidad: EXF</td></tr>
+<tr><td></td><td>Line: 2</td></tr>
+<tr><td></td><td>id: 1233538</td></tr>
+</td></tr>
+<tr><td>2024-08-26 12:54:25</td><td>Connection Closed</td>
+
+</table>
+<h2>Request Logs</h2>
+<table border='1' cellpadding='5' cellspacing='0'>
+<tr><th>Timestamp</th><th>Details</th></tr>
+<tr><td>2024-08-26 12:54:22</td><td>Client IP: 127.0.0.1</td>
+<tr><td></td><td>Method: POST</td></tr>
+<tr><td></td><td>URL: http://localhost:25938/rfcnet.asmx</td></tr>
+<tr><td></td><td>Headers:</td></tr>
+<tr><td></td><td>Connection: Keep-Alive</td></tr>
+<tr><td></td><td>Content-Length: 403</td></tr>
+<tr><td></td><td>Content-Type: text/xml;charset=UTF-8</td></tr>
+<tr><td></td><td>Accept-Encoding: gzip,deflate</td></tr>
+<tr><td></td><td>Host: localhost:25938</td></tr>
+<tr><td></td><td>User-Agent: Apache-HttpClient/4.1.1 (java 1.5)</td></tr>
+<tr><td></td><td>SOAPAction: "http://tempuri.org/DB_ETIQUETA_VENTANA"</td></tr>
+</td></tr>
+
+</table>
+</body>
+</html>

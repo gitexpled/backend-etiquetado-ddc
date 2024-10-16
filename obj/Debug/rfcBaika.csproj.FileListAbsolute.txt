@@ -1,0 +1,255 @@
+c:\users\mac\documents\visual studio 2010\Projects\rfcBaika\rfcBaika\bin\rfcBaika.dll
+c:\users\mac\documents\visual studio 2010\Projects\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+c:\users\mac\documents\visual studio 2010\Projects\rfcBaika\rfcBaika\bin\sapnco.dll
+c:\users\mac\documents\visual studio 2010\Projects\rfcBaika\rfcBaika\bin\sapnco_utils.dll
+c:\users\mac\documents\visual studio 2010\Projects\rfcBaika\rfcBaika\obj\Debug\ResolveAssemblyReference.cache
+c:\users\mac\documents\visual studio 2010\Projects\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+c:\users\mac\documents\visual studio 2010\Projects\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+D:\baikarfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.csprojResolveAssemblyReference.cache
+D:\baikarfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+D:\baikarfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+D:\baikarfc\rfcBaika\rfcBaika\bin\rfcBaika.dll
+D:\baikarfc\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+\\Expled-nas\expled\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\rfcBaika.dll
+\\Expled-nas\expled\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+\\Expled-nas\expled\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\obj\Debug\rfcBaika.csprojResolveAssemblyReference.cache
+\\Expled-nas\expled\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+\\Expled-nas\expled\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZDSB_PROCESO.cs
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_NSC.cs
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_UPDATE_CRT_CALLE.cs
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_ENVIO_PART.cs
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_QUERY_STOCK_EXCEL.cs
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\DB_LOGIN.cs
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Configuration.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Data.DataSetExtensions.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Data.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Drawing.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.EnterpriseServices.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.ApplicationServices.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.DynamicData.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.Entity.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.Extensions.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.Services.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Xml.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Xml.Linq.dll
+\\expled-nas\EXPLED\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_MANDARINA.cs
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_GR_NARANJA.cs
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_MANDARINA.cs
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZDSB_PROCESO.cs
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_NSC.cs
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_UPDATE_CRT_CALLE.cs
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_ENVIO_PART.cs
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_QUERY_STOCK_EXCEL.cs
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\DB_LOGIN.cs
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\rfcBaika.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Configuration.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Data.DataSetExtensions.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Data.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Drawing.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.EnterpriseServices.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.ApplicationServices.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.DynamicData.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.Entity.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.Extensions.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Web.Services.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Xml.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\System.Xml.Linq.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\obj\Debug\rfcBaika.csprojResolveAssemblyReference.cache
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_GR_NARANJA.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_MANDARINA.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZDSB_PROCESO.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_NSC.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_UPDATE_CRT_CALLE.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_ENVIO_PART.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_QUERY_STOCK_EXCEL.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\DB_LOGIN.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\rfcBaika.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Configuration.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Data.DataSetExtensions.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Data.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Drawing.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.EnterpriseServices.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Web.ApplicationServices.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Web.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Web.DynamicData.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Web.Entity.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Web.Extensions.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Web.Services.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Xml.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\System.Xml.Linq.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\obj\Debug\rfcBaika.csprojResolveAssemblyReference.cache
+C:\expled\baikaweb\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+C:\expled\baikaweb\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+Z:\respaldo mcarrasco\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_REPROCE_NARA.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_REPROCE_NARA.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_CLEMENT.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_MANDARI.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROCESO_LIMO.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_UVA.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_KIWI.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PT_LIMON.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PT_MANDARINA.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PREPRO_LIMON.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_HU_NARANJA.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_GR_ALMENDRA.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROCAL_ALMEN.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROSAT_ALMEN.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_GR_CIRUELA.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROTER_CIRUE.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROCAL_CIRUE.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_NUEZCC.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_NZ_ENV.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_NZ_PROCAL.cs
+C:\expled\baikaweb\rfcBaika\rfcBaika\bin\ZMOV_QUERY_CLASIFICACION.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_QUERY_CLASIFICACION.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_NZ_PROCAL.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_NZ_ENV.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_NUEZCC.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_GR_CIRUELA.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROTER_CIRUE.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROCAL_CIRUE.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROSAT_ALMEN.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROCAL_ALMEN.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_GR_ALMENDRA.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_HU_NARANJA.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PREPRO_LIMON.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PT_LIMON.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PT_MANDARINA.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_UVA.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_KIWI.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_PROCESO_LIMO.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_MANDARI.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_AGRUPALOTE_CLEMENT.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_REPROCE_NARA.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_GR_NARANJA.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_MANDARINA.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZDSB_PROCESO.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_RECEP_NSC.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_UPDATE_CRT_CALLE.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_CREATE_ENVIO_PART.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\ZMOV_QUERY_STOCK_EXCEL.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\DB_LOGIN.cs
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\rfcBaika.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\sapnco.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\sapnco_utils.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Configuration.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Data.DataSetExtensions.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Data.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Drawing.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.EnterpriseServices.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Web.ApplicationServices.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Web.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Web.DynamicData.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Web.Entity.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Web.Extensions.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Web.Services.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Xml.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\bin\System.Xml.Linq.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\obj\Debug\rfcBaika.csprojResolveAssemblyReference.cache
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+C:\Users\Ivan Araya\Desktop\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\DB_LOGIN.cs
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\rfcBaika.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Configuration.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Data.DataSetExtensions.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Data.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Drawing.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.EnterpriseServices.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Web.ApplicationServices.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Web.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Web.DynamicData.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Web.Entity.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Web.Extensions.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Web.Services.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Xml.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\bin\System.Xml.Linq.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\obj\Debug\rfcBaika.csprojResolveAssemblyReference.cache
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+C:\Users\ivan\Desktop\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\DB_LOGIN.cs
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\rfcBaika.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\Newtonsoft.Json.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\Select.HtmlToPdf.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Configuration.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Data.DataSetExtensions.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Data.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Drawing.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.EnterpriseServices.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.ApplicationServices.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.DynamicData.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.Entity.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.Extensions.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.Services.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Xml.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Xml.Linq.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\Newtonsoft.Json.pdb
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\Newtonsoft.Json.xml
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.csprojResolveAssemblyReference.cache
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+\\WIN-LQCB06TFRJ5\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\DB_LOGIN.cs
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\rfcBaika.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\Select.HtmlToPdf.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Configuration.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Data.DataSetExtensions.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Data.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Drawing.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.EnterpriseServices.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.ApplicationServices.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.DynamicData.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.Entity.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.Extensions.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.Services.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Xml.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Xml.Linq.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\Newtonsoft.Json.pdb
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+C:\Users\Administrator\Desktop\david del curto rfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.csprojResolveAssemblyReference.cache
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\DB_PRESIZER.cs
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\DB_LOGIN.cs
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\rfcBaika.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\rfcBaika.pdb
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\Newtonsoft.Json.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Configuration.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Data.DataSetExtensions.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Data.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Drawing.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.EnterpriseServices.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.ApplicationServices.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.DynamicData.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.Entity.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.Extensions.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Web.Services.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Xml.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\System.Xml.Linq.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.pdb
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\sapnco.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\sapnco_utils.dll
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\obj\Debug\rfcBaika.csprojResolveAssemblyReference.cache
+E:\Desktop\david del curto rfc\rfcBaika\rfcBaika\bin\DB_MONITOR_PANTALL.cs

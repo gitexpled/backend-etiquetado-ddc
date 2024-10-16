@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.Script.Serialization;
+
+namespace rfcBaika
+{
+    public partial class JSON_ZMOV_QUERY_GRUPO_CATE : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            String ATKLA = "";
+            if (Request["ATKLA"] != null)
+            {
+                ATKLA = Request["ATKLA"].ToString();
+            }
+
+
+
+            ZMOV_QUERY_GRUPO_CATE sap = new ZMOV_QUERY_GRUPO_CATE();
+            request_ZMOV_QUERY_GRUPO_CATE imp = new request_ZMOV_QUERY_GRUPO_CATE();
+            imp.ATKLA = ATKLA;
+            responce_ZMOV_QUERY_GRUPO_CATE obj = sap.sapRun(imp);
+            var json2 = new JavaScriptSerializer().Serialize(obj);
+            json.Text = json2.ToString();
+
+        }
+    }
+}

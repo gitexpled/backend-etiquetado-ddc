@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="rfcBaika.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="rfcBaika_cl_ptichile_sistema_test_WSDLService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://sistema-test.ptichile.cl/ws/ws_pti_recepcion.php</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

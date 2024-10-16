@@ -1,0 +1,13 @@
+Timestamp: 2024-08-26 12:54:22
+Client IP: 127.0.0.1
+Method: POST
+URL: http://localhost:25938/rfcnet.asmx
+Headers:
+Connection: Keep-Alive
+Content-Length: 403
+Content-Type: text/xml;charset=UTF-8
+Accept-Encoding: gzip,deflate
+Host: localhost:25938
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+SOAPAction: "http://tempuri.org/DB_ETIQUETA_VENTANA"
+--------------------------------------------------
